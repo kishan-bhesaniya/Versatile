@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   if (typeof Swiper !== "undefined") {
-    const vsbanswiper = new Swiper(".vshm-ban-slider", {
+    new Swiper(".vshm-ban-slider", {
       loop: true,
       speed: 800,
       autoplay: {
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
     showPlatformTab($(this).data("rel"));
   });
 
-  const ptindutabsswiper = new Swiper(".ptindutabs-slider", {
+  new Swiper(".ptindutabs-slider", {
     slidesPerView: 1,
     navigation: {
       nextEl: ".swiper-button-next.ptindutabs-swiper-next",
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  const pttestimaonialswiper = new Swiper(".pttest-slider", {
+  new Swiper(".pttest-slider", {
     slidesPerView: 3,
     spaceBetween: 30,
     pagination: {
@@ -344,4 +344,18 @@ document.addEventListener("DOMContentLoaded", function () {
     resetMegamenuRight();
     $(this).closest(".megamenupanel-main").removeClass("megamenupanel-show");
   });
+});
+
+new Swiper(".innovation-img-slider", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  navigation: {
+    nextEl: ".innovation-next",
+    prevEl: ".innovation-prev",
+  },
+  pagination: {
+    el: ".innovation-pagination",
+    clickable: true,
+  },
 });
