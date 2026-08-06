@@ -72,6 +72,11 @@ h6 {
     font-family: "Dm Sans", sans-serif;
 }
 
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 a {
     font-family: "inter", sans-serif;
 }
@@ -93,25 +98,25 @@ a {
 }
 
 header {
-    position: fixed;
-    top: 15px;
+    position: sticky;
     left: 0;
     right: 0;
+    top: 0;
     z-index: 999;
     background: transparent;
-    transition: all .4s ease;
-
 }
 
 header .container {
     width: 90%;
+    border-radius: 50px;
+    background: rgb(0, 119, 189, 0.1);
+    padding: 9px 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .header .navbar {
     background: #EAF5FC;
-    border-radius: 50px;
-    padding: 9px 30px;
-    transition: all .35s ease;
 }
 
 .header .navbar-nav {
@@ -137,15 +142,12 @@ header .container {
 }
 
 .vsban-box {
-    min-height: 750px;
+    min-height: 700px;
     display: flex;
     align-items: end;
     padding-bottom: 120px;
 }
 
-.vsban-box .pttitle-design h5 {
-    margin-bottom: 30px;
-}
 
 .vsbanimg-inner {
     position: absolute;
