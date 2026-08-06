@@ -154,13 +154,22 @@ header .container {
     right: 0;
     bottom: 0;
     z-index: -1;
+    overflow: hidden;
+}
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
+.vsbanimg-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.vsbanimg-inner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.1) 35%, rgba(0, 0, 0, 0.1) 65%, rgba(0, 0, 0, 0.65) 100%);
+    pointer-events: none;
 }
 
 .vshm-desc h1 {
@@ -170,7 +179,7 @@ header .container {
     line-height: auto;
     color: #fff;
     margin-bottom: 30px;
-   }
+}
 
 .vshm-desc p {
     font-weight: mixed;
@@ -179,7 +188,7 @@ header .container {
     color: #EAF5FC;
     margin-bottom: 0;
 
-    & i{
+    & i {
         color: #0D73D8;
         font-weight: 600;
     }
@@ -196,12 +205,57 @@ header .container {
     display: block;
     width: fit-content;
     transition: all 0.4s ease-in-out;
+}
 
-    &:hover,
-    &:active,
-    &:focus {
-        background: #204CA0;
-        color: #FFFFFF;
-    }
+.ptmsec-btn:hover,
+.ptmsec-btn:active,
+.ptmsec-btn:focus {
+    background: #204CA0;
+    color: #FFFFFF;
+}
 
+.vshm-banner .swiper-button-prev,
+.vshm-banner .swiper-button-next {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.85);
+    color: #0d73d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.vshm-banner .swiper-button-prev::after,
+.vshm-banner .swiper-button-next::after {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.vshm-banner .swiper-button-prev {
+    left: 20px;
+}
+
+.vshm-banner .swiper-button-next {
+    right: 20px;
+}
+
+.vshm-banner .swiper-pagination {
+    position: absolute;
+    left: 50%;
+    bottom: 28px;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.vshm-banner .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    opacity: 1;
+}
+
+.vshm-banner .swiper-pagination-bullet-active {
+    background: #0d73d8;
 }

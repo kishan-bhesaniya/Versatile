@@ -2,11 +2,14 @@ document.addEventListener("DOMContentLoaded", function () {
   if (typeof Swiper !== "undefined") {
     const vsbanswiper = new Swiper(".vshm-ban-slider", {
       loop: true,
-      effect: "fade",
       speed: 800,
       autoplay: {
         delay: 4000,
         disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".vshm-banner .swiper-pagination",
+        clickable: true,
       },
       observer: true,
       observeParents: true,
