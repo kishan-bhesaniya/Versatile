@@ -1,12 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const vsbanswiper = new Swiper(".vshm-ban-slider", {
-    loop: true,
-    effect: "fade",
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-  });
+  if (typeof Swiper !== "undefined") {
+    const vsbanswiper = new Swiper(".vshm-ban-slider", {
+      loop: true,
+      effect: "fade",
+      speed: 800,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      observer: true,
+      observeParents: true,
+    });
+  }
 
   // Below 767px the platform section is a plain tab panel, so the slider is
   // destroyed and the pill tabs swap the boxes instead.
@@ -110,11 +115,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Passed as a getter because the instance is destroyed and rebuilt on resize
-  initPlatformScrollSlider(function () {
-    return ptplatformswiper;
-  });
+  if (typeof initPlatformScrollSlider === "function") {
+    initPlatformScrollSlider(function () {
+      return ptplatformswiper;
+    });
+  }
 
-  initQuoteStepper();
+  if (typeof initQuoteStepper === "function") {
+    initQuoteStepper();
+  }
 
   // Marquee Js
   var marquee = document.querySelector(".ptmctmarq-main");
