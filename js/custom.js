@@ -358,4 +358,9 @@ new Swiper(".innovation-img-slider", {
     el: ".innovation-pagination",
     clickable: true,
   },
+  loop: true,
+  speed: 400,
+  autoplay: {
+    delay: 4000,
+  },
 });

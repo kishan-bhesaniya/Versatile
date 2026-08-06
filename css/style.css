@@ -242,18 +242,19 @@ header .container {
     font-size: 18px;
     line-height: 25px;
     color: #383336;
-    background: #0077BD;
+    background: #6794e7;
     border-radius: 10px 0px;
     padding: 15px 20px;
     display: block;
     width: fit-content;
     transition: all 0.4s ease-in-out;
+    text-decoration: none;
 }
 
 .ptmsec-btn:hover,
 .ptmsec-btn:active,
 .ptmsec-btn:focus {
-    background: #204CA0;
+    background: #0077BD;
     color: #FFFFFF;
 }
 
@@ -300,7 +301,7 @@ header .container {
 }
 
 .vshm-banner .swiper-pagination-bullet-active {
-    background: #0d73d8;
+    background: #0077BD;
 }
 
 .vsinnovation-sec {
@@ -313,6 +314,7 @@ header .container {
     font-weight: 400;
     color: #000000;
     margin-bottom: 30px;
+    margin-top: 38px;
 }
 
 .vsinnovation-desc h2 span {
@@ -326,10 +328,10 @@ header .container {
 
 .vsinnovation-desc p {
     font-size: 18px;
-    line-height: auto;
+    line-height: 24px;
     font-weight: 400;
     color: #373435;
-    margin-bottom: 20px;
+    margin-bottom: 29px;
 }
 
 .innovation-arrow {
@@ -384,7 +386,7 @@ header .container {
 .innovation-feature {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 .feature-box {
@@ -407,12 +409,11 @@ header .container {
 }
 
 .feature-divider {
-    width: 2px;
+    width: 1px;
     height: 70px;
     background: #0077BD;
     border-radius: 50px;
 }
-
 
 .innovation-img-slider {
     border-radius: 35px;
@@ -451,4 +452,10 @@ header .container {
 .innovation-img-slider img {
     display: block;
     width: 100%;
+}
+
+.sw-img {
+    position: absolute;
+    right: 52%;
+    bottom: -280px;
 }
