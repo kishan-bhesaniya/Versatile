@@ -415,3 +415,30 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+const projectsSwiper = new Swiper(".projects-img-slider", {
+  slidesPerView: 1.2,
+  centeredSlides: true,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".projects-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".projects-control-next",
+    prevEl: ".projects-control-prev",
+  },
+
+  breakpoints: {
+    576: {
+      slidesPerView: 1.5,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 1.8,
+      spaceBetween: 40,
+    },
+  },
+});
