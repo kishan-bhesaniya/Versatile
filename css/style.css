@@ -718,3 +718,123 @@ header .container {
     transform: translateY(-2px);
     box-shadow: 0 8px 16px rgba(0, 119, 189, 0.2);
 }
+
+/* ==========================================
+   4. Milestones Section (.vsmilestones-sec)
+========================================== */
+.vsmilestones-sec {
+    padding: 120px 0;
+    background-color: #ffffff;
+}
+
+/* ડાબી બાજુનું સોફ્ટ બ્લુ મેઈન કાર્ડ */
+.milestones-main-card {
+    background: #E8F5F8;
+    /* ડિઝાઇન મુજબનો આછો આકાશી બ્લુ બેકગ્રાઉન્ડ */
+    border-radius: 30px;
+    padding: 50px 40px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.milestones-card-icon {
+    margin-bottom: 35px;
+    position: absolute;
+    top: 0;
+    opacity: 0.4;
+}
+
+.milestones-card-icon img {
+    object-fit: contain;
+}
+
+.milestones-main-title {
+    font-size: 42px;
+    line-height: 48px;
+    font-weight: 400;
+    color: #1A1A1A;
+    margin-bottom: 25px;
+}
+
+.milestones-main-title strong {
+    display: block;
+    font-weight: 700;
+}
+
+.milestones-main-desc {
+    font-size: 16px;
+    line-height: 24px;
+    color: #4A4A4A;
+    margin-bottom: 0;
+}
+
+.milestones-decor-arrow {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+}
+
+.milestones-decor-arrow img {
+    width: 50px;
+    height: auto;
+}
+
+.milestones-counter-card {
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 40px 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 10px 40px rgba(0, 119, 189, 0.04);
+    border: 1px solid rgba(0, 119, 189, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.milestones-counter-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(0, 119, 189, 0.08);
+}
+
+.counter-icon-box {
+    margin-bottom: 23px;
+}
+
+.counter-icon-box img {
+    height: 45px;
+    object-fit: contain;
+}
+
+.counter-number {
+    font-size: 50px;
+    font-weight: 700;
+    color: #373435;
+    line-height: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.counter-label {
+    font-size: 20px;
+    font-weight: 400;
+    color: #373435;
+    line-height: 26px;
+    text-align: center;
+}
+
+.ml-blue-glow-circle-bottom {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 100%;
+    height: 20%;
+    border-radius: 0%;
+    background: rgba(0, 198, 255, 0.25);
+    filter: blur(620px);
+    z-index: 1;
+    pointer-events: none;
+}
