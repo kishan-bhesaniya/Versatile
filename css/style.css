@@ -838,3 +838,113 @@ header .container {
     z-index: 1;
     pointer-events: none;
 }
+
+.vsclients-sec {
+    padding: 0 0 120px 0;
+}
+
+.vsclients-heading h2 {
+    font-size: 46px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #373435;
+}
+
+.vsclients-divider-line {
+    width: 2px;
+    height: 60px;
+    background-color: #0077BD;
+    opacity: 0.4;
+}
+
+.vsclients-desc-text {
+    font-size: 20px;
+    line-height: 28px;
+    color: #373435;
+    font-weight: 400;
+    /* margin: 0; */
+    /* max-width: 520px; */
+}
+
+.vsclients-marquee-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.marquee-track-left,
+.marquee-track-right {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    user-select: none;
+    gap: 24px;
+}
+
+.marquee-content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+
+}
+
+
+.vsclients-logo-box {
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+}
+
+.marquee-track-left .marquee-content {
+    animation: scrollLeft 25s linear infinite;
+}
+
+.marquee-track-right .marquee-content {
+    animation: scrollRight 25s linear infinite;
+}
+
+.marquee-track-left:hover .marquee-content,
+.marquee-track-right:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - 24px));
+    }
+}
+
+@keyframes scrollRight {
+    0% {
+        transform: translateX(calc(-100% - 24px));
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.sc-blue-glow-circle-bottom {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    border-radius: 0%;
+    background: rgba(0, 198, 255, 0.25);
+    filter: blur(620px);
+    z-index: 5;
+    pointer-events: none;
+}
