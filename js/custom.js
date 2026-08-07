@@ -349,7 +349,7 @@ document.addEventListener("DOMContentLoaded", function () {
 new Swiper(".innovation-img-slider", {
   loop: true,
   slidesPerView: 1,
-  spaceBetween: 0,
+  spaceBetween: 10,
   navigation: {
     nextEl: ".innovation-next",
     prevEl: ".innovation-prev",
@@ -358,9 +358,75 @@ new Swiper(".innovation-img-slider", {
     el: ".innovation-pagination",
     clickable: true,
   },
-  loop: true,
-  speed: 400,
-  autoplay: {
-    delay: 4000,
-  },
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. Data configurations for each content block panel
+  const spacesData = {
+    fire: {
+      title: "Fire & Safety Solution",
+      image: "/image/fire-extinguisher.png",
+      text: "Fires can happen anywhere be it your home, office or factory. Proper water systems, sprinklers, gas systems are safety measures that are lifesaving. Get all the required fire and safety solutions from us, ensuring that you're safe and sound in case of an unfortunate calamity.",
+      link: "#fire-solutions",
+    },
+    cctv: {
+      title: "CCTV & Security Surveillance",
+      image: "/image/fire-extinguisher.png",
+      text: "Monitor and protect your property with smart high-definition monitoring systems. Our cutting-edge CCTV solutions offer reliable 24/7 video recording, cloud storage analytics, and remote access viewing from your mobile devices anytime, anywhere.",
+      link: "#security-solutions",
+    },
+    pipe: {
+      title: "Pipe System Installation",
+      image: "/image/fire-extinguisher.png",
+      text: "Durable and secure industrial piping infrastructure engineered for maximum fluid dynamics control. We deploy high-grade materials certified for gas networks, safety sprinklers, and continuous heavy-duty liquid distribution systems.",
+      link: "#pipe-solutions",
+    },
+  };
+
+  // 2. Select DOM interface elements
+  const navTabs = document.querySelectorAll(".spaces-nav-box");
+  const featureImg = document.getElementById("spaces-feature-img");
+  const featureTitle = document.getElementById("spaces-feature-title");
+  const featureText = document.getElementById("spaces-feature-text");
+  const featureLink = document.getElementById("spaces-feature-link");
+
+  // 3. Handle click trigger actions
+  navTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      // Ignore click processing if the active section is clicked again
+      if (tab.classList.contains("active")) return;
+
+      // Toggle visual active highlights
+      document.querySelector(".spaces-nav-box.active")?.classList.remove("active");
+      tab.classList.add("active");
+
+      // Pull current target configuration key data
+      const contentKey = tab.getAttribute("data-target");
+      const currentContent = spacesData[contentKey];
+
+      if (currentContent) {
+        // Optional smooth crossfade visual effect hook
+        const contentContainer = document.querySelector(".spaces-feature-content");
+        if (contentContainer && featureImg) {
+          contentContainer.style.opacity = "0.3";
+          featureImg.style.opacity = "0.3";
+          contentContainer.style.transition = "opacity 0.2s ease";
+          featureImg.style.transition = "opacity 0.2s ease";
+
+          setTimeout(() => {
+            // Swap text values safely
+            featureTitle.textContent = currentContent.title;
+            featureText.textContent = currentContent.text;
+            featureImg.src = currentContent.image;
+            featureLink.setAttribute("href", currentContent.link);
+
+            // Restore clarity styling views
+            contentContainer.style.opacity = "1";
+            featureImg.style.opacity = "1";
+          }, 200);
+        }
+      }
+    });
+  });
 });
