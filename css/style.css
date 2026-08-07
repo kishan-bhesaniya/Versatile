@@ -334,52 +334,6 @@ header .container {
     z-index: 2;
 }
 
-.vshm-banner .swiper-button-prev,
-.vshm-banner .swiper-button-next {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.85);
-    color: #0d73d8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-}
-
-.vshm-banner .swiper-button-prev::after,
-.vshm-banner .swiper-button-next::after {
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.vshm-banner .swiper-button-prev {
-    left: 20px;
-}
-
-.vshm-banner .swiper-button-next {
-    right: 20px;
-}
-
-.vshm-banner .swiper-pagination {
-    position: absolute;
-    left: 50%;
-    bottom: 28px;
-    transform: translateX(-50%);
-    z-index: 10;
-}
-
-.vshm-banner .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    background: rgba(255, 255, 255, 0.6);
-    opacity: 1;
-}
-
-.vshm-banner .swiper-pagination-bullet-active {
-    background: #0077BD;
-}
-
 .vsinnovation-desc h2 {
     font-size: 46px;
     line-height: 50px;
@@ -661,18 +615,15 @@ header .container {
 }
 
 .vsinnovation-sec {
-    padding: 100px 0;
-    position: relative;
-    background: linear-gradient(135deg, #e3fdf5 0%, #ffe6fa 100%);
-    overflow: hidden;
+    padding: 120px 0;
 }
 
 .blue-glow-circle-bottom {
     position: absolute;
-    bottom: -20%;
-    right: -10%;
-    width: 650px;
-    height: 650px;
+    bottom: 100px;
+    right: 0;
+    width: 60%;
+    height: 60%;
     border-radius: 50%;
     background: rgba(0, 198, 255, 0.25);
     filter: blur(150px);
@@ -706,8 +657,8 @@ header .container {
 }
 
 .spaces-feature-content p {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 28px;
     font-weight: 400;
     color: #475569;
     margin-bottom: 30px;
@@ -721,11 +672,18 @@ header .container {
     display: inline-flex;
     align-items: center;
     transition: color 0.2s ease;
+    gap: 17px;
 }
 
-.spaces-readmore-btn:hover {
-    color: #0077BD;
+.spaces-readmore-btn img {
+    display: inline-block;
+    transition: transform 0.3s ease;
 }
+
+.spaces-readmore-btn:hover img {
+    transform: rotate(45deg);
+}
+
 
 .spaces-nav-controls {
     display: flex;

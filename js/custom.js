@@ -360,72 +360,57 @@ new Swiper(".innovation-img-slider", {
   },
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Data configurations for each content block panel
+  // 1. Data Store for the tabs
   const spacesData = {
     fire: {
       title: "Fire & Safety Solution",
       image: "/image/fire-extinguisher.png",
-      text: "Fires can happen anywhere be it your home, office or factory. Proper water systems, sprinklers, gas systems are safety measures that are lifesaving. Get all the required fire and safety solutions from us, ensuring that you're safe and sound in case of an unfortunate calamity.",
+      text: "Fires can happen anywhere be it your home, office or factory. Proper water systems, sprinklers, gas systems are safety measures that are lifesaving. Get all the required fire and safety solutions from us, ensuring that you’re safe and sound in case of an unfortunate calamity.  Fires can happen anywhere be it your home, office or factory. Proper water systems, sprinklers, gas systems are safety measures that are lifesaving.",
       link: "#fire-solutions",
     },
     cctv: {
       title: "CCTV & Security Surveillance",
       image: "/image/fire-extinguisher.png",
-      text: "Monitor and protect your property with smart high-definition monitoring systems. Our cutting-edge CCTV solutions offer reliable 24/7 video recording, cloud storage analytics, and remote access viewing from your mobile devices anytime, anywhere.",
+      text: "Monitor and protect your property with smart high-definition monitoring systems. Our cutting-edge CCTV solutions offer reliable 24/7 video recording.",
       link: "#security-solutions",
     },
     pipe: {
       title: "Pipe System Installation",
       image: "/image/fire-extinguisher.png",
-      text: "Durable and secure industrial piping infrastructure engineered for maximum fluid dynamics control. We deploy high-grade materials certified for gas networks, safety sprinklers, and continuous heavy-duty liquid distribution systems.",
+      text: "Durable and secure industrial piping infrastructure engineered for maximum fluid dynamics control.",
       link: "#pipe-solutions",
     },
   };
 
-  // 2. Select DOM interface elements
+  // 2. Select HTML Elements
   const navTabs = document.querySelectorAll(".spaces-nav-box");
   const featureImg = document.getElementById("spaces-feature-img");
   const featureTitle = document.getElementById("spaces-feature-title");
   const featureText = document.getElementById("spaces-feature-text");
   const featureLink = document.getElementById("spaces-feature-link");
 
-  // 3. Handle click trigger actions
+  // 3. Handle Tab Clicks
   navTabs.forEach((tab) => {
     tab.addEventListener("click", () => {
-      // Ignore click processing if the active section is clicked again
+      // Stop if the clicked tab is already active
       if (tab.classList.contains("active")) return;
 
-      // Toggle visual active highlights
-      document.querySelector(".spaces-nav-box.active")?.classList.remove("active");
+      // Switch active class to the clicked tab
+      document
+        .querySelector(".spaces-nav-box.active")
+        ?.classList.remove("active");
       tab.classList.add("active");
 
-      // Pull current target configuration key data
+      // Get data key and update content instantly
       const contentKey = tab.getAttribute("data-target");
       const currentContent = spacesData[contentKey];
 
       if (currentContent) {
-        // Optional smooth crossfade visual effect hook
-        const contentContainer = document.querySelector(".spaces-feature-content");
-        if (contentContainer && featureImg) {
-          contentContainer.style.opacity = "0.3";
-          featureImg.style.opacity = "0.3";
-          contentContainer.style.transition = "opacity 0.2s ease";
-          featureImg.style.transition = "opacity 0.2s ease";
-
-          setTimeout(() => {
-            // Swap text values safely
-            featureTitle.textContent = currentContent.title;
-            featureText.textContent = currentContent.text;
-            featureImg.src = currentContent.image;
-            featureLink.setAttribute("href", currentContent.link);
-
-            // Restore clarity styling views
-            contentContainer.style.opacity = "1";
-            featureImg.style.opacity = "1";
-          }, 200);
-        }
+        featureTitle.textContent = currentContent.title;
+        featureText.textContent = currentContent.text;
+        featureImg.src = currentContent.image;
+        featureLink.href = currentContent.link;
       }
     });
   });
