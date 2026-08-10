@@ -446,13 +446,17 @@ const projectsSwiper = new Swiper(".projects-img-slider", {
   },
 
   breakpoints: {
-    576: {
+    200: {
       slidesPerView: 1.5,
-      spaceBetween: 30,
+      spaceBetween: 10,
     },
-    992: {
-      slidesPerView: 1.8,
-      spaceBetween: 40,
+    767: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    991: {
+      spaceBetween: 20,
+      slidesPerView: 1.2,
     },
   },
 });
