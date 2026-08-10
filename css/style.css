@@ -1245,10 +1245,6 @@ textarea.form-control {
     text-wrap: nowrap;
 }
 
-.service-list>a {
-    margin-bottom: 10px;
-}
-
 .elv-area {
     position: relative;
     padding-right: 22px;
@@ -2517,13 +2513,16 @@ textarea.form-control {
     .service-area h3,
     .bottom-heading {
         font-size: 18px;
-        margin-bottom: 18px;
+        margin-top: 18px;
     }
 
     .service-list a {
         font-size: 14px;
         line-height: 27px;
-        white-space: normal;
+    }
+
+    .service-list a+a {
+        margin-top: 10px;
     }
 
     .elv-area {
@@ -2550,6 +2549,10 @@ textarea.form-control {
 
     .quick-links {
         gap: 10px 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 18px;
     }
 
     .quick-links a {
@@ -2618,6 +2621,16 @@ textarea.form-control {
     }
 
     .fire-pipe-row {
-        padding: 15px;
+        padding: 0 15px;
+    }
+
+    .ft-blue-glow-circle,
+    .blue-glow-circle,
+    .blue-glow-circle-bottom,
+    .ml-blue-glow-circle-bottom,
+    .sc-blue-glow-circle-bottom,
+    .cs-blue-glow-circle,
+    .ft-blue-glow-circle {
+        display: none;
     }
 }
