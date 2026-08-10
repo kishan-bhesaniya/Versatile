@@ -792,6 +792,8 @@ header .container {
     box-shadow: 0 10px 40px rgba(0, 119, 189, 0.04);
     border: 1px solid rgba(0, 119, 189, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+    position: relative;
 }
 
 .milestones-counter-card:hover {
@@ -829,12 +831,12 @@ header .container {
     position: absolute;
     bottom: 0px;
     right: 0;
-    width: 100%;
-    height: 20%;
+    width: 75%;
+    height: 30%;
     border-radius: 0%;
     background: rgba(0, 198, 255, 0.25);
     filter: blur(620px);
-    z-index: 1;
+    z-index: 0;
     pointer-events: none;
 }
 
@@ -937,12 +939,38 @@ header .container {
     position: absolute;
     top: 100px;
     left: 0;
-    width: 50%;
-    height: 50%;
+    width: 966px;
+    height: 333px;
     border-radius: 0%;
     background: rgba(0, 198, 255, 0.25);
     filter: blur(620px);
-    z-index: 5;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.cs-blue-glow-circle {
+    position: absolute;
+    bottom: -201px;
+    right: 0;
+    width: 100%;
+    height: 70%;
+    border-radius: 0%;
+    background: #C9EBFF;
+    filter: blur(420px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.ft-blue-glow-circle {
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    width: 100%;
+    height: 70%;
+    border-radius: 0%;
+    background: #FCFEC7;
+    filter: blur(420px);
+    z-index: -1;
     pointer-events: none;
 }
 
@@ -1553,6 +1581,7 @@ textarea.form-control {
 
     .innovation-feature {
         gap: 20px;
+        justify-content: center;
     }
 
     .feature-box h5 {
@@ -2175,7 +2204,7 @@ textarea.form-control {
     }
 
     .vsspaces-container {
-        padding: 55px 15px;
+        padding: 20px 15px;
     }
 
     .vsspaces-desc h2 {
@@ -2254,7 +2283,7 @@ textarea.form-control {
     }
 
     .vsmilestones {
-        padding: 60px 0;
+        padding: 20px;
     }
 
     .milestones-main-card {
@@ -2291,7 +2320,9 @@ textarea.form-control {
     }
 
     .counter-icon-box {
-        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .counter-icon-box img {
@@ -2449,7 +2480,8 @@ textarea.form-control {
     #contactMessage,
     #contactFirstName,
     #contactEmail,
-    #contactPhone {
+    #contactPhone,
+    #contactLastName {
         margin-bottom: 20px;
     }
 
@@ -2460,6 +2492,11 @@ textarea.form-control {
     .footer-card {
         min-height: auto;
         border-radius: 20px;
+    }
+
+    .g-3,
+    .gy-3 {
+        --bs-gutter-y: 0;
     }
 
     .footer-inner {
@@ -2569,12 +2606,6 @@ textarea.form-control {
         filter: blur(250px);
     }
 
-    img,
-    video,
-    iframe {
-        margin-right: 10px;
-    }
-
     .swiper {
         max-width: 100%;
     }
@@ -2586,4 +2617,7 @@ textarea.form-control {
         box-sizing: border-box;
     }
 
+    .fire-pipe-row {
+        padding: 15px;
+    }
 }
