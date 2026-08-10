@@ -320,7 +320,7 @@ header .container {
     position: absolute;
     top: 20%;
     left: 30%;
-    width: 1000px;
+    width: 70%;
     height: 600px;
     border-radius: 50%;
     background: rgba(13, 110, 253, 0.12);
@@ -1187,10 +1187,6 @@ textarea.form-control {
     padding: 57px 79px 21px;
 }
 
-.company-column {
-    padding-right: 25px;
-}
-
 .company-description {
     color: rgb(0, 0, 0, 0.6);
     font-size: 16px;
@@ -1231,7 +1227,7 @@ textarea.form-control {
     width: 1px;
     height: 200px;
     background: #0085cf;
-    right: 310px;
+    right: 55%;
     top: 55px;
 }
 
@@ -1347,4 +1343,1232 @@ textarea.form-control {
     color: #111;
     font-size: 15px;
     line-height: 1;
+}
+
+@media (max-width: 1399px) {
+
+    header .container {
+        width: 94%;
+        padding: 8px 22px;
+    }
+
+    .header .nav-item+.nav-item {
+        margin-left: 28px;
+    }
+
+    .header .nav-item a {
+        font-size: 16px;
+    }
+
+    .vsban-box {
+        min-height: 650px;
+        padding-bottom: 100px;
+    }
+
+    .vshm-desc h1 {
+        font-size: 44px;
+        line-height: 1.15;
+    }
+
+    .vshm-desc p {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .vsinnovation-sec {
+        padding: 100px 0;
+    }
+
+    .vsinnovation-desc h2 {
+        font-size: 40px;
+        line-height: 1.2;
+        margin-top: 25px;
+    }
+
+    .vsinnovation-desc p {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .innovation-nav {
+        margin-left: -30px;
+    }
+
+    .innovation-prev,
+    .innovation-next {
+        width: 48px;
+        height: 48px;
+    }
+
+    .vsspaces-container {
+        padding: 70px 0;
+    }
+
+    .vsspaces-desc h2 {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .vsspaces-lead-text {
+        font-size: 18px;
+        line-height: 29px;
+    }
+
+    .spaces-feature-content h3 {
+        font-size: 32px;
+    }
+
+    .spaces-feature-content p {
+        font-size: 17px;
+        line-height: 27px;
+    }
+
+    .vsspaces-sec .innovation-bottom {
+        margin-top: 120px;
+    }
+
+    .vsmilestones-sec {
+        padding: 100px 0;
+    }
+
+    .milestones-main-card {
+        padding: 40px 30px;
+    }
+
+    .milestones-main-title {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+
+    .counter-number {
+        font-size: 45px;
+    }
+
+    .counter-label {
+        font-size: 18px;
+    }
+
+    .vsclients-sec {
+        padding-bottom: 100px;
+    }
+
+    .vsclients-heading h2 {
+        font-size: 40px;
+    }
+
+    .vsclients-desc-text {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .vsprojects-sec {
+        padding: 100px 0;
+    }
+
+    .vsprojects-heading h2 {
+        font-size: 40px;
+        margin-bottom: 65px;
+    }
+
+    .contact-card {
+        max-width: 1000px;
+    }
+
+    .contact-form-panel {
+        padding: 60px 40px;
+    }
+
+    .footer-inner {
+        padding: 50px 50px 20px;
+    }
+}
+
+@media (max-width: 1199px) {
+    header .container {
+        width: 95%;
+        padding: 8px 20px;
+    }
+
+    .sw-img {
+        position: absolute;
+        right: 45%;
+        bottom: 190px;
+    }
+
+    .header .nav-item+.nav-item {
+        margin-left: 20px;
+    }
+
+    .vsspaces-sec .row.align-items-center {
+        margin-bottom: 54px;
+    }
+
+    .card-wraper {
+        padding: 26px 9px;
+    }
+
+    .header .nav-item a {
+        font-size: 15px;
+    }
+
+    .vsban-box {
+        min-height: 600px;
+        padding-bottom: 90px;
+    }
+
+    .vshm-desc h1 {
+        font-size: 40px;
+        max-width: 95%;
+    }
+
+    .vshm-desc p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .ptmsec-btn {
+        font-size: 16px;
+        padding: 13px 18px;
+    }
+
+    .vsinnovation-sec {
+        padding: 90px 0;
+    }
+
+    .vsinnovation-desc h2 {
+        font-size: 36px;
+        line-height: 1.2;
+        margin-top: 0;
+    }
+
+    .vsinnovation-desc p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .innovation-feature {
+        gap: 20px;
+    }
+
+    .feature-box h5 {
+        font-size: 19px;
+    }
+
+    .innovation-nav {
+        margin-left: 0;
+    }
+
+    .vsspaces-container {
+        padding: 70px 0;
+    }
+
+    .vsspaces-desc h2 {
+        font-size: 36px;
+    }
+
+    .vsspaces-lead-text {
+        font-size: 17px;
+        line-height: 27px;
+    }
+
+    .vsspaces-desc .spaces-divider-vertical {
+        margin-right: 30px;
+    }
+
+    .spaces-feature-content h3 {
+        font-size: 30px;
+    }
+
+    .spaces-feature-content p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .vsspaces-sec .innovation-bottom {
+        margin-top: 80px;
+    }
+
+    .spaces-nav-controls {
+        bottom: -30px;
+    }
+
+    .vsmilestones-sec {
+        padding: 90px 0;
+    }
+
+    .milestones-main-card {
+        padding: 35px 25px;
+    }
+
+    .milestones-main-title {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .milestones-main-desc {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .milestones-counter-card {
+        padding: 30px 20px;
+    }
+
+    .counter-number {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .counter-label {
+        font-size: 17px;
+    }
+
+    .vsclients-sec {
+        padding-bottom: 90px;
+    }
+
+    .vsclients-heading h2 {
+        font-size: 36px;
+    }
+
+    .vsclients-desc-text {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+
+    .vsprojects-sec {
+        padding: 90px 0;
+    }
+
+    .vsprojects-heading h2 {
+        font-size: 36px;
+        margin-bottom: 60px;
+    }
+
+    .projects-caption {
+        left: 30px;
+        bottom: 25px;
+    }
+
+    .contact-card {
+        max-width: 950px;
+    }
+
+    .contact-info-panel {
+        padding: 10px 25px;
+    }
+
+    .contact-title {
+        font-size: 36px;
+    }
+
+    .contact-form-panel {
+        padding: 55px 35px;
+    }
+
+    .footer-inner {
+        padding: 45px 35px 20px;
+    }
+
+    .company-description {
+        font-size: 15px;
+    }
+
+    .service-list a {
+        font-size: 14px;
+    }
+
+    .elv-area::after {
+        display: none;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    header .container {
+        width: 94%;
+        padding: 8px 18px;
+        border-radius: 30px;
+    }
+
+    .header .navbar-nav {
+        align-items: flex-start;
+        padding: 15px 0;
+    }
+
+    .header .nav-item {
+        width: 100%;
+    }
+
+    .header .nav-item+.nav-item {
+        margin-left: 0;
+    }
+
+    .header .nav-item a {
+        display: block;
+        padding: 7px 0;
+        font-size: 17px;
+    }
+
+    .milestones-decor-arrow img {
+        display: none;
+    }
+
+    .vsban-box {
+        min-height: 600px;
+        padding-bottom: 80px;
+    }
+
+    .vshm-desc h1 {
+        font-size: 40px;
+        max-width: 100%;
+    }
+
+    .vshm-desc p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .vshm-banner .swiper-button-prev,
+    .vshm-banner .swiper-button-next {
+        width: 38px;
+        height: 38px;
+    }
+
+    .vsinnovation-sec {
+        padding: 80px 0;
+    }
+
+    .vsinnovation-desc {
+        margin-bottom: 45px;
+    }
+
+    .vsinnovation-desc h2 {
+        font-size: 36px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .vsinnovation-desc p {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .innovation-bottom {
+        margin-top: 25px;
+    }
+
+    .innovation-nav {
+        margin-left: 0;
+    }
+
+    .innovation-img-slider {
+        border-radius: 25px;
+    }
+
+    .sw-img {
+        display: none;
+    }
+
+
+    /* SPACES */
+
+    .vsspaces-container {
+        padding: 65px 0;
+    }
+
+    .vsspaces-desc {
+        display: block;
+    }
+
+    .vsspaces-desc .spaces-divider-vertical {
+        display: none;
+    }
+
+    .vsspaces-desc h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .vsspaces-lead-text {
+        font-size: 17px;
+        line-height: 27px;
+    }
+
+    .vsspaces-sec .row.align-items-center {
+        margin-bottom: 45px;
+    }
+
+    .vsspaces-sec .col-md-3 {
+        margin-bottom: 25px;
+    }
+
+    .spaces-feature-img-wrapper {
+        margin-bottom: 30px;
+        border-radius: 24px;
+    }
+
+    .spaces-feature-content h3 {
+        font-size: 30px;
+        margin-bottom: 18px;
+    }
+
+    .spaces-feature-content p {
+        font-size: 17px;
+        line-height: 27px;
+    }
+
+    .vsspaces-sec .innovation-bottom {
+        margin-top: 50px;
+    }
+
+    .spaces-nav-controls {
+        position: static;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+
+    .vsmilestones-sec {
+        padding: 80px 0;
+    }
+
+    .milestones-main-card {
+        margin-bottom: 25px;
+        padding: 40px 30px;
+    }
+
+    .milestones-main-title {
+        font-size: 36px;
+    }
+
+    .milestones-counter-card {
+        min-height: 250px;
+    }
+
+    .counter-number {
+        font-size: 42px;
+    }
+
+
+    /* CLIENTS */
+
+    .vsclients-sec {
+        padding-bottom: 80px;
+    }
+
+    .vsclients-heading h2 {
+        font-size: 36px;
+    }
+
+    .vsclients-desc-text {
+        font-size: 17px;
+    }
+
+    .vsclients-marquee-wrapper {
+        margin-top: 25px;
+    }
+
+    .marquee-content {
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+
+    /* PROJECTS */
+
+    .vsprojects-sec {
+        padding: 80px 0;
+    }
+
+    .vsprojects-heading h2 {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+
+    .projects-slide-box {
+        border-radius: 25px;
+    }
+
+    .projects-caption {
+        left: 25px;
+        bottom: 25px;
+    }
+
+    .projects-nav-controls {
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    .ptmsec-btn {
+        font-size: 15px;
+        padding: 6px 14px;
+    }
+
+    .contact-card {
+        max-width: 95%;
+    }
+
+    .card-wraper {
+        padding: 20px;
+    }
+
+    .contactt-card {
+        padding: 0;
+    }
+
+    .contact-row+.contact-row {
+        margin-top: 0;
+    }
+
+    .contact-row {
+        padding: 10px 10px;
+    }
+
+    .contact-info-panel {
+        min-height: auto;
+        padding: 25px 30px 35px;
+        margin-bottom: 25px;
+        border-radius: 25px;
+    }
+
+    .contact-title {
+        font-size: 34px;
+        margin-top: 15px;
+    }
+
+    .contact-form-panel {
+        padding: 30px 20px;
+    }
+
+    .elv-area::after {
+        display: none;
+    }
+
+    .footer-card {
+        min-height: auto;
+    }
+
+    .footer-inner {
+        padding: 40px 30px 20px;
+    }
+
+    .company-column {
+        padding-right: 0;
+        margin-bottom: 35px;
+    }
+
+    .elv-area {
+        padding-right: 0;
+    }
+
+    .elv-area::after {
+        display: none;
+    }
+
+    .second-list {
+        padding-left: 0;
+    }
+
+    .fire-pipe-row .service-area:first-child,
+    .fire-pipe-row .service-area:last-child {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .bottom-section {
+        margin-top: 35px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    body {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+
+    /* GLOBAL */
+
+    .mtb-120 {
+        margin-block: 60px;
+    }
+
+    .ptb-80 {
+        padding-block: 50px;
+    }
+
+    .mt-50 {
+        margin-top: 30px;
+    }
+
+    .mt-30 {
+        margin-top: 20px;
+    }
+
+
+    /* HEADER */
+
+    header .container {
+        width: calc(100% - 20px);
+        padding: 7px 15px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        border-radius: 22px;
+    }
+
+    .header .nav-item a {
+        font-size: 16px;
+    }
+
+
+    /* HERO */
+
+    .vsban-box {
+        min-height: 500px;
+        padding-bottom: 65px;
+    }
+
+    .vshm-desc h1 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 18px;
+    }
+
+    .vshm-desc p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .ptmsec-btn {
+        font-size: 15px;
+        line-height: 22px;
+        padding: 11px 16px;
+    }
+
+    .vshm-banner .swiper-button-prev,
+    .vshm-banner .swiper-button-next {
+        width: 34px;
+        height: 34px;
+    }
+
+    .vshm-banner .swiper-button-prev {
+        left: 10px;
+    }
+
+    .vshm-banner .swiper-button-next {
+        right: 10px;
+    }
+
+    .vshm-banner .swiper-pagination {
+        bottom: 18px;
+    }
+
+
+    /* INNOVATION */
+
+    .vsinnovation-sec {
+        padding: 60px 0;
+    }
+
+    .vsinnovation-desc {
+        margin-bottom: 35px;
+    }
+
+    .vsinnovation-desc h2 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 18px;
+    }
+
+    .vsinnovation-desc p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .innovation-arrow {
+        display: none;
+    }
+
+    .innovation-feature {
+        gap: 8px;
+        justify-content: space-between;
+    }
+
+    .feature-box {
+        flex: 1;
+    }
+
+    .feature-icon img {
+        width: 25px;
+    }
+
+    .feature-box h5 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .feature-divider {
+        height: 40px;
+    }
+
+    .innovation-bottom {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .innovation-line {
+        display: none;
+    }
+
+    .innovation-nav {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .innovation-prev,
+    .innovation-next {
+        width: 44px;
+        height: 44px;
+    }
+
+    .innovation-img-slider {
+        border-radius: 18px;
+    }
+
+    .vsspaces-container {
+        padding: 55px 15px;
+    }
+
+    .vsspaces-desc h2 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 18px;
+    }
+
+    .vsspaces-lead-text {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .vsspaces-sec .row.align-items-center {
+        margin-bottom: 35px;
+    }
+
+    .spaces-nav-box {
+        padding: 5px;
+    }
+
+    .spaces-nav-icon {
+        height: 32px;
+        margin-bottom: 8px;
+    }
+
+    .spaces-nav-icon img {
+        height: 26px;
+    }
+
+    .spaces-nav-box h5 {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .spaces-divider-horizontal {
+        margin-bottom: 20px;
+    }
+
+    .spaces-feature-img-wrapper {
+        border-radius: 18px;
+        margin-bottom: 25px;
+    }
+
+    .spaces-feature-content h3 {
+        font-size: 27px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .spaces-feature-content p {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+
+    .spaces-readmore-btn {
+        font-size: 15px;
+        gap: 12px;
+    }
+
+    .vsspaces-sec .innovation-bottom {
+        margin-top: 35px;
+    }
+
+    .spaces-nav-controls {
+        position: static;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .spaces-control-prev,
+    .spaces-control-next {
+        width: 42px;
+        height: 42px;
+    }
+
+
+    /* MILESTONES */
+
+    .vsmilestones-sec {
+        padding: 60px 0;
+    }
+
+    .milestones-main-card {
+        min-height: 330px;
+        padding: 30px 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .milestones-main-title {
+        font-size: 29px;
+        line-height: 1.2;
+        margin-bottom: 18px;
+    }
+
+    .milestones-main-desc {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .milestones-decor-arrow {
+        bottom: 25px;
+        right: 20px;
+    }
+
+    .milestones-decor-arrow img {
+        width: 40px;
+    }
+
+    .milestones-counter-card {
+        min-height: 200px;
+        padding: 25px 15px;
+        border-radius: 20px;
+    }
+
+    .counter-icon-box {
+        margin-bottom: 15px;
+    }
+
+    .counter-icon-box img {
+        height: 38px;
+    }
+
+    .counter-number {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .counter-label {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+    /* CLIENTS */
+
+    .vsclients-sec {
+        padding-bottom: 60px;
+    }
+
+    .vsclients-heading h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .vsclients-divider-line {
+        height: 40px;
+        width: 1px;
+    }
+
+    .vsclients-desc-text {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .vsclients-marquee-wrapper {
+        margin-top: 20px;
+    }
+
+    .marquee-content {
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .marquee-track-left,
+    .marquee-track-right {
+        gap: 15px;
+    }
+
+    .vsclients-logo-box {
+        flex: 0 0 130px;
+        min-height: 70px;
+    }
+
+
+    /* PROJECTS */
+
+    .vsprojects-sec {
+        padding: 60px 0;
+    }
+
+    .vsprojects-heading h2 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 35px;
+    }
+
+    .projects-slide-box {
+        border-radius: 20px;
+    }
+
+    .projects-slide-box::after {
+        border-radius: 20px;
+    }
+
+    .projects-caption {
+        left: 15px;
+        bottom: 15px;
+    }
+
+    .projects-caption p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .projects-pagination {
+        margin-top: 25px;
+    }
+
+    .projects-pagination .swiper-pagination-bullet {
+        width: 9px;
+        height: 9px;
+        margin: 0 4px !important;
+    }
+
+    .projects-pagination .swiper-pagination-bullet-active {
+        width: 30px;
+    }
+
+    .projects-nav-controls {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .projects-control-prev,
+    .projects-control-next {
+        width: 42px;
+        height: 42px;
+    }
+
+
+    /* CONTACT */
+
+    .contact-card {
+        max-width: calc(100% - 20px);
+        border-radius: 18px;
+    }
+
+    .card-wraper {
+        padding: 15px;
+    }
+
+    .contact-info-panel {
+        padding: 20px 20px 30px;
+        border-radius: 18px;
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+
+    .contact-title {
+        font-size: 28px;
+        line-height: 1.2;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .contact-subtitle {
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 25px;
+    }
+
+    .contact-text {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .contact-detail-item+.contact-detail-item {
+        margin-top: 20px;
+    }
+
+    .contact-form-panel {
+        padding: 25px 10px 15px;
+    }
+
+    .contact-input-field {
+        font-size: 14px;
+        padding: 11px 13px;
+    }
+
+    #contactMessage,
+    #contactFirstName,
+    #contactEmail,
+    #contactPhone {
+        margin-bottom: 20px;
+    }
+
+    .contact-textarea-field {
+        min-height: 120px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-card {
+        min-height: auto;
+        border-radius: 20px;
+    }
+
+    .footer-inner {
+        padding: 30px 15px 15px;
+    }
+
+    .company-column {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .company-description {
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 20px;
+    }
+
+    .service-area h3,
+    .bottom-heading {
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+
+    .service-list a {
+        font-size: 14px;
+        line-height: 27px;
+        white-space: normal;
+    }
+
+    .elv-area {
+        padding-right: 0;
+    }
+
+    .elv-area::after {
+        display: none;
+    }
+
+    .second-list {
+        padding-left: 0;
+    }
+
+    .fire-pipe-row .service-area:first-child,
+    .fire-pipe-row .service-area:last-child {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .bottom-section {
+        margin-top: 30px;
+    }
+
+    .quick-links {
+        gap: 10px 16px;
+    }
+
+    .quick-links a {
+        font-size: 13px;
+    }
+
+    .contactt-card {
+        min-height: auto;
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .contact-row {
+        gap: 12px;
+        padding: 12px 7px;
+    }
+
+    .contact-row+.contact-row {
+        margin-top: 10px;
+    }
+
+    .contact-icon {
+        width: 22px;
+        flex: 0 0 22px;
+        font-size: 19px;
+    }
+
+    .phone-row,
+    .email-row {
+        margin-top: 10px;
+    }
+
+    .copyright {
+        margin: 10px 0;
+        padding-top: 18px;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+
+    /* DECORATIVE GLOW */
+
+    .blue-glow-circle {
+        width: 500px;
+        height: 350px;
+        filter: blur(200px);
+    }
+
+    .blue-glow-circle-bottom {
+        width: 500px;
+        height: 500px;
+        filter: blur(120px);
+    }
+
+    .ml-blue-glow-circle-bottom,
+    .sc-blue-glow-circle-bottom {
+        filter: blur(250px);
+    }
+
+    img,
+    video,
+    iframe {
+        margin-right: 10px;
+    }
+
+    .swiper {
+        max-width: 100%;
+    }
+
+    .form-control,
+    textarea,
+    .contact-input-field {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
 }
