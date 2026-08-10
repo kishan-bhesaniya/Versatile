@@ -1927,6 +1927,53 @@ textarea.form-control {
         padding: 10px 10px;
     }
 
+    .close-btn {
+        outline: none;
+        border: none;
+        background: none;
+    }
+
+    button.close-btn {
+        height: 35px;
+        width: 35px;
+        background: #f3e5db;
+        border: 0;
+        padding: 0;
+        border-radius: 50px;
+        position: absolute;
+        z-index: 2;
+        top: 40px;
+        right: 55px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        padding: 50px 40px;
+        width: 60%;
+        position: fixed;
+        right: 100%;
+        left: auto;
+        height: 100%;
+        background-color: #ffffff;
+        top: 0;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+        border: 0;
+        z-index: 99;
+    }
+
+    .navbar-expand-lg .navbar-collapse.show {
+        transform: translateX(0);
+        right: 0;
+    }
+
+    img.navbar-logo {
+        max-width: 60%;
+    }
+
     .contact-info-panel {
         min-height: auto;
         padding: 25px 30px 35px;
@@ -1945,10 +1992,6 @@ textarea.form-control {
 
     .elv-area::after {
         display: none;
-    }
-
-    .footer-card {
-        min-height: auto;
     }
 
     .footer-inner {
@@ -2010,8 +2053,10 @@ textarea.form-control {
         margin-top: 20px;
     }
 
-
-    /* HEADER */
+    .navbar-expand-lg .navbar-collapse.show {
+        right: 0;
+        width: 100%;
+    }
 
     header .container {
         width: calc(100% - 20px);

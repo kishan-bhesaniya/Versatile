@@ -442,3 +442,15 @@ const projectsSwiper = new Swiper(".projects-img-slider", {
     },
   },
 });
+
+$(document).ready(function () {
+  $(".navbar-toggler").click(function () {
+    $(".collapse").addClass("show");
+  });
+});
+
+$(document).ready(function () {
+  $(".close-btn").click(function () {
+    $(".collapse").removeClass("show");
+  });
+});
