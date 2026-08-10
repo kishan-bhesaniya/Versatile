@@ -1772,11 +1772,8 @@ textarea.form-control {
         display: none;
     }
 
-
-    /* SPACES */
-
     .vsspaces-container {
-        padding: 65px 0;
+        padding: 60px 0;
     }
 
     .vsspaces-desc {
@@ -1904,7 +1901,7 @@ textarea.form-control {
 
     .ptmsec-btn {
         font-size: 15px;
-        padding: 6px 14px;
+        padding: 8px 16px;
     }
 
     .contact-card {
@@ -1912,7 +1909,7 @@ textarea.form-control {
     }
 
     .card-wraper {
-        padding: 20px;
+        padding: 0;
     }
 
     .contactt-card {
@@ -1931,9 +1928,10 @@ textarea.form-control {
         outline: none;
         border: none;
         background: none;
+        box-shadow: none;
     }
 
-    button.close-btn {
+    .close-btn {
         height: 35px;
         width: 35px;
         background: #f3e5db;
@@ -1971,7 +1969,7 @@ textarea.form-control {
     }
 
     img.navbar-logo {
-        max-width: 60%;
+        max-width: 70%;
     }
 
     .contact-info-panel {

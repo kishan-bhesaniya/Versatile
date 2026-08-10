@@ -358,6 +358,20 @@ new Swiper(".innovation-img-slider", {
     el: ".innovation-pagination",
     clickable: true,
   },
+  breakpoints: {
+    200: {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+    },
+    767: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    991: {
+      spaceBetween: 0,
+      slidesPerView: 1,
+    },
+  },
 });
 
 document.addEventListener("DOMContentLoaded", () => {
