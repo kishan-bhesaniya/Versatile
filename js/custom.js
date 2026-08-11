@@ -374,13 +374,14 @@ new Swiper(".innovation-img-slider", {
   },
 });
 
+
 document.addEventListener("DOMContentLoaded", () => {
   // 1. Data Store for the tabs
   const spacesData = {
     fire: {
       title: "Fire & Safety Solution",
       image: "/image/fire-extinguisher.png",
-      text: "Fires can happen anywhere be it your home, office or factory. Proper water systems, sprinklers, gas systems are safety measures that are lifesaving. Get all the required fire and safety solutions from us, ensuring that you’re safe and sound in case of an unfortunate calamity.  Fires can happen anywhere be it your home, office or factory. Proper water systems, sprinklers, gas systems are safety measures that are lifesaving.",
+      text: "Fires can happen anywhere be it your home, office or factory. Proper water systems, sprinklers, gas systems are safety measures that are lifesaving.",
       link: "#fire-solutions",
     },
     cctv: {
@@ -429,12 +430,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
+// project slider
 const projectsSwiper = new Swiper(".projects-img-slider", {
   slidesPerView: 1.2,
   centeredSlides: true,
   spaceBetween: 30,
-  loop: true,
+  loop: false,
   pagination: {
     el: ".projects-pagination",
     clickable: true,
