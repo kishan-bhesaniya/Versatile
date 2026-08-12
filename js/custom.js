@@ -419,46 +419,30 @@ const projectsSwiper = new Swiper(".projects-img-slider", {
   },
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const imageSlider = new Swiper(".spaces-image-slider", {
-    slidesPerView: 1,
-    spaceBetween: 20,
+var spacesSlider = new Swiper(".spaces-feature-slider", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".innovation-pagination",
+    clickable: true,
+  },
 
-    pagination: {
-      el: ".innovation-pagination",
-      clickable: true,
+  navigation: {
+    nextEl: ".innovation-next",
+    prevEl: ".innovation-prev",
+  },
+  breakpoints: {
+    200: {
+      slidesPerView: 1,
+      spaceBetween: 10,
     },
-
-    allowTouchMove: true,
-    grabCursor: true,
-    breakpoints: {
-      200: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      767: {
-        slidesPerView: 1,
-      },
-      991: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-      },
+    767: {
+      slidesPerView: 2,
     },
-  });
-
-  const contentSlider = new Swiper(".spaces-content-slider", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-
-    navigation: {
-      nextEl: ".innovation-next",
-      prevEl: ".innovation-prev",
+    991: {
+      spaceBetween: 20,
+      slidesPerView: 1,
     },
-
-    allowTouchMove: true,
-  });
-
-  // Connect both sliders
-  imageSlider.controller.control = contentSlider;
-  contentSlider.controller.control = imageSlider;
+  },
 });

@@ -169,6 +169,50 @@ header .container {
     transition: all 0.3s ease;
 }
 
+.service-dropdown {
+    position: relative;
+}
+
+.service-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 210px;
+    margin: 0;
+    padding: 10px 0;
+    background: #ffffff;
+    border: 0;
+    border-radius: 10px;
+    list-style: none;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.25s ease;
+    z-index: 999;
+}
+
+.service-dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px !important;
+    line-height: 22px;
+    color: #000000 !important;
+    text-decoration: none;
+    border: 0 !important;
+}
+
+.service-dropdown-menu li a:hover {
+    color: #0077BD !important;
+    background: #f5f5f5;
+}
+
+.service-dropdown:hover>.service-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
 .nav .nav-link.active,
 .nav .nav-link:hover {
     color: #0077BD;
@@ -232,8 +276,8 @@ header .container {
     padding-block: 120px;
 }
 
-.mtb-120 {
-    margin-block: 120px;
+.mtb-80 {
+    margin-block: 80px;
 }
 
 .ptmsec-btn {
@@ -265,31 +309,17 @@ header .container {
     margin-right: 50px;
 }
 
-.ptmsecc-btn:last-child {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    background: #0077BD;
-    border-radius: 10px 0px;
-    padding: 15px 30px;
-    display: block;
-    width: fit-content;
-    transition: all 0.4s ease-in-out;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
 .ptmsec-btn:hover,
 .ptmsec-btn:active,
 .ptmsec-btn:focus {
-    background: #39b5fc;
+    background: #00a2fff9;
     color: #FFFFFF;
 }
 
 .ptmsecc-btn:hover,
 .ptmsecc-btn:active,
 .ptmsecc-btn:focus {
-    background: #39b5fc;
+    background: #01a2ff;
     color: #FFFFFF;
 }
 
@@ -438,7 +468,6 @@ header .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     transition: .3s;
     font-size: 18px;
 }
@@ -515,7 +544,10 @@ header .container {
 
 .vsspaces {
     position: relative;
-    background: #ffffff;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    z-index: 1;
+    padding: 81px 107px 27px 62px;
 }
 
 .blue-glow-circle-bottom {
@@ -643,16 +675,16 @@ header .container {
 }
 
 .vsspaces .innovation-bottom {
-    margin-top: 179px;
+    margin-top: -26px;
+    margin-left: 30px;
 }
 
 .blue-glow-circle-bottom {
     position: absolute;
-    bottom: 100px;
-    right: 0;
-    width: 60%;
-    height: 60%;
-    border-radius: 50%;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 20%;
     background: rgba(0, 198, 255, 0.25);
     filter: blur(150px);
     z-index: 1;
@@ -686,16 +718,16 @@ header .container {
 
 .spaces-feature-content p {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 24px;
     font-weight: 400;
-    color: #475569;
+    color: #373435;
     margin-bottom: 30px;
 }
 
 .spaces-readmore-btn {
     font-size: 16px;
     font-weight: 600;
-    color: #0f172a;
+    color: #000000;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -703,15 +735,18 @@ header .container {
     gap: 17px;
 }
 
-.spaces-readmore-btn img {
-    display: inline-block;
-    transition: transform 0.3s ease;
+.spaces-readmore-btn:hover {
+    color: #0077BD;
 }
 
-.spaces-readmore-btn:hover img {
+.spaces-readmore-btn svg {
+    transition: transform 0.35s ease;
+}
+
+.spaces-readmore-btn:hover svg {
+    fill: #0076c0;
     transform: rotate(45deg);
 }
-
 
 .spaces-nav-controls {
     display: flex;
@@ -1143,7 +1178,6 @@ header .container {
     border-radius: 24px;
     box-shadow: 0 4px 25px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -1367,8 +1401,7 @@ textarea.form-control {
 .contactt-card {
     border: 2px solid #0085d1;
     border-radius: 13px;
-    min-height: 217px;
-    padding: 12px 15px 10px;
+    padding: 11px 15px;
     color: #444;
     font-size: 16px;
     line-height: 1.35;
@@ -1378,19 +1411,15 @@ textarea.form-control {
     display: flex;
     align-items: flex-start;
     gap: 18px;
-    padding: 15px 11px;
+}
+
+.contact-row+.contact-row {
+    margin-top: 20px;
 }
 
 .contact-row:nth-child(2),
 .contact-row:last-child {
     align-items: center;
-}
-
-.contact-row {
-    display: flex;
-    align-items: flex-start;
-    gap: 18px;
-    padding: 15px 11px;
 }
 
 .contact-icon {
@@ -1533,10 +1562,6 @@ textarea.form-control {
         margin-bottom: 65px;
     }
 
-    .contact-card {
-        max-width: 1000px;
-    }
-
     .contact-form-panel {
         padding: 60px 40px;
     }
@@ -1544,15 +1569,6 @@ textarea.form-control {
     .footer-inner {
         padding: 50px 50px 20px;
     }
-
-    .vsinnovation,
-    .vsspaces-container,
-    .vsmilestones,
-    .vsclients,
-    .vsprojects {
-        padding: 0 !important;
-    }
-
 }
 
 @media (max-width: 1199px) {
@@ -1561,12 +1577,8 @@ textarea.form-control {
         padding: 8px 20px;
     }
 
-    .vsinnovation,
-    .vsspaces-container,
-    .vsmilestones,
-    .vsclients,
-    .vsprojects {
-        padding: 35px 0 !important;
+    .ptb-120 {
+        padding-block: 90px;
     }
 
     .sw-img {
@@ -1732,10 +1744,6 @@ textarea.form-control {
         bottom: 25px;
     }
 
-    .contact-card {
-        max-width: 950px;
-    }
-
     .contact-info-panel {
         padding: 10px 25px;
     }
@@ -1768,12 +1776,8 @@ textarea.form-control {
 
 @media (max-width: 991px) {
 
-    .vsinnovation,
-    .vsspaces-container,
-    .vsmilestones,
-    .vsclients,
-    .vsprojects {
-        padding: 20px 0 !important;
+    .ptb-120 {
+        padding-block: 70px;
     }
 
     header .container {
@@ -2011,10 +2015,6 @@ textarea.form-control {
         padding: 8px 16px;
     }
 
-    .contact-card {
-        max-width: 95%;
-    }
-
     .contactt-card {
         padding: 0;
     }
@@ -2111,8 +2111,6 @@ textarea.form-control {
         padding-left: 0;
     }
 
-
-
     .bottom-section {
         margin-top: 35px;
     }
@@ -2120,15 +2118,6 @@ textarea.form-control {
 }
 
 @media (max-width: 767px) {
-
-    .vsinnovation,
-    .vsspaces,
-    .vsspaces-container,
-    .vsmilestones,
-    .vsclients,
-    .vsprojects {
-        padding: 20px 0 !important;
-    }
 
     .vsspaces-container {
         padding: 20px 15px !important;
@@ -2481,7 +2470,6 @@ textarea.form-control {
     }
 
     .contact-card {
-        max-width: calc(100% - 20px);
         border-radius: 18px;
     }
 
