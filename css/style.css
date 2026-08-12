@@ -977,12 +977,25 @@ header .container {
 
 .ft-blue-glow-circle {
     position: absolute;
-    bottom: -60px;
+    bottom: -115px;
     right: 0;
-    width: 100%;
+    width: 50%;
     height: 30%;
     border-radius: 0%;
     background: #FCFEC7;
+    filter: blur(420px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.ft-2-blue-glow-circle {
+    position: absolute;
+    bottom: -115px;
+    left: 0;
+    width: 50%;
+    height: 30%;
+    border-radius: 0%;
+    background: #B5EBFF;
     filter: blur(420px);
     z-index: -1;
     pointer-events: none;
@@ -1238,10 +1251,9 @@ textarea.form-control {
 
 .footer-inner {
     position: relative;
-    padding: 57px 79px 21px;
+    padding: 44px 43px 10px 42px;
     border-radius: 50px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-    z-index: 1;
+    box-shadow: 0 4px 25px 8px rgba(0, 0, 0, 0.1);
 }
 
 .company-description {
@@ -1253,7 +1265,7 @@ textarea.form-control {
 
 .service-area h3,
 .bottom-heading {
-    margin: 0 0 25px;
+    margin: 0 0 20px;
     color: #000000;
     font-size: 20px;
     line-height: 1;
@@ -1399,9 +1411,9 @@ textarea.form-control {
     margin: 10px 32px;
     padding-top: 24px;
     text-align: center;
-    color: #111;
-    font-size: 15px;
-    line-height: 1;
+    color: #000000;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 @media (max-width: 1399px) {
