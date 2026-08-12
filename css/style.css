@@ -977,10 +977,10 @@ header .container {
 
 .ft-blue-glow-circle {
     position: absolute;
-    bottom: -50px;
+    bottom: -60px;
     right: 0;
     width: 100%;
-    height: 70%;
+    height: 30%;
     border-radius: 0%;
     background: #FCFEC7;
     filter: blur(420px);
@@ -1236,16 +1236,12 @@ textarea.form-control {
     min-height: 109px;
 }
 
-.footer-card {
-    background: #fff;
-    border-radius: 30px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-}
-
 .footer-inner {
     position: relative;
     padding: 57px 79px 21px;
+    border-radius: 50px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    z-index: 1;
 }
 
 .company-description {
@@ -1264,45 +1260,43 @@ textarea.form-control {
     font-weight: 700;
 }
 
+.service-list {
+    list-style: none;
+}
+
 .service-list a {
     color: #000000;
     font-size: 15px;
     line-height: 30px;
     text-decoration: none;
-    list-style: none;
-    text-wrap: nowrap;
 }
 
-.elv-area {
-    position: relative;
-    padding-right: 22px;
+.service-list a:hover {
+    color: #0076c0;
+}
+
+.list-wrapper {
+    display: flex;
+    gap: 26px;
+}
+
+.service-list {
+    list-style: none;
+    margin-right: 26px;
 }
 
 .elv-area::after {
     content: "";
     position: absolute;
     width: 1px;
-    height: 200px;
+    height: 209px;
     background: #0085cf;
-    right: 55%;
-    top: 55px;
+    left: 36%;
+    top: 15%;
 }
 
 .second-list {
     padding-left: 26px;
-}
-
-.fire-pipe-row {
-    padding-left: 0;
-}
-
-.fire-pipe-row .service-area:first-child {
-    padding-left: 10px;
-    padding-right: 20px;
-}
-
-.fire-pipe-row .service-area:last-child {
-    padding-left: 11px;
 }
 
 .bottom-section {
@@ -1316,7 +1310,7 @@ textarea.form-control {
 
 .social-icons a {
     border-radius: 6px;
-    color: #fff;
+    color: #373435;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2087,11 +2081,6 @@ textarea.form-control {
         padding: 40px 30px 20px;
     }
 
-    .company-column {
-        padding-right: 0;
-        margin-bottom: 35px;
-    }
-
     .elv-area {
         padding-right: 0;
     }
@@ -2104,11 +2093,7 @@ textarea.form-control {
         padding-left: 0;
     }
 
-    .fire-pipe-row .service-area:first-child,
-    .fire-pipe-row .service-area:last-child {
-        padding-left: 0;
-        padding-right: 0;
-    }
+
 
     .bottom-section {
         margin-top: 35px;
@@ -2532,7 +2517,7 @@ textarea.form-control {
         min-height: 120px;
     }
 
-    .footer-card {
+    .footer {
         min-height: auto;
         border-radius: 20px;
     }
@@ -2544,11 +2529,6 @@ textarea.form-control {
 
     .footer-inner {
         padding: 30px 15px 15px;
-    }
-
-    .company-column {
-        padding-right: 0;
-        margin-bottom: 30px;
     }
 
     .company-description {
@@ -2568,30 +2548,12 @@ textarea.form-control {
         line-height: 27px;
     }
 
-    .service-list a:hover {
-        color: #0076c0;
-    }
-
     .service-list a+a {
         margin-top: 10px;
     }
 
-    .elv-area {
-        padding-right: 0;
-    }
-
-    .elv-area::after {
-        display: none;
-    }
-
     .second-list {
         padding-left: 0;
-    }
-
-    .fire-pipe-row .service-area:first-child,
-    .fire-pipe-row .service-area:last-child {
-        padding-left: 0;
-        padding-right: 0;
     }
 
     .bottom-section {
@@ -2669,10 +2631,6 @@ textarea.form-control {
     .contact-input-field {
         max-width: 100%;
         box-sizing: border-box;
-    }
-
-    .fire-pipe-row {
-        padding: 0 15px;
     }
 
     .nav-item {
