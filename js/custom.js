@@ -345,6 +345,17 @@ document.addEventListener("DOMContentLoaded", function () {
     $(this).closest(".megamenupanel-main").removeClass("megamenupanel-show");
   });
 });
+$(document).ready(function () {
+  $(".navbar-toggler").click(function () {
+    $(".collapse").addClass("show");
+  });
+});
+
+$(document).ready(function () {
+  $(".close-btn").click(function () {
+    $(".collapse").removeClass("show");
+  });
+});
 
 new Swiper(".innovation-img-slider", {
   loop: true,
@@ -358,6 +369,8 @@ new Swiper(".innovation-img-slider", {
     el: ".innovation-pagination",
     clickable: true,
   },
+  grabCursor: true,
+
   breakpoints: {
     200: {
       slidesPerView: 1.5,
@@ -374,62 +387,6 @@ new Swiper(".innovation-img-slider", {
   },
 });
 
-
-document.addEventListener("DOMContentLoaded", () => {
-  // 1. Data Store for the tabs
-  const spacesData = {
-    fire: {
-      title: "Fire & Safety Solution",
-      image: "/image/fire-extinguisher.png",
-      text: "Fires can happen anywhere be it your home, office or factory. Proper water systems, sprinklers, gas systems are safety measures that are lifesaving.",
-      link: "#fire-solutions",
-    },
-    cctv: {
-      title: "CCTV & Security Surveillance",
-      image: "/image/fire-extinguisher.png",
-      text: "Monitor and protect your property with smart high-definition monitoring systems. Our cutting-edge CCTV solutions offer reliable 24/7 video recording.",
-      link: "#security-solutions",
-    },
-    pipe: {
-      title: "Pipe System Installation",
-      image: "/image/fire-extinguisher.png",
-      text: "Durable and secure industrial piping infrastructure engineered for maximum fluid dynamics control.",
-      link: "#pipe-solutions",
-    },
-  };
-
-  // 2. Select HTML Elements
-  const navTabs = document.querySelectorAll(".spaces-nav-box");
-  const featureImg = document.getElementById("spaces-feature-img");
-  const featureTitle = document.getElementById("spaces-feature-title");
-  const featureText = document.getElementById("spaces-feature-text");
-  const featureLink = document.getElementById("spaces-feature-link");
-
-  // 3. Handle Tab Clicks
-  navTabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      // Stop if the clicked tab is already active
-      if (tab.classList.contains("active")) return;
-
-      // Switch active class to the clicked tab
-      document
-        .querySelector(".spaces-nav-box.active")
-        ?.classList.remove("active");
-      tab.classList.add("active");
-
-      // Get data key and update content instantly
-      const contentKey = tab.getAttribute("data-target");
-      const currentContent = spacesData[contentKey];
-
-      if (currentContent) {
-        featureTitle.textContent = currentContent.title;
-        featureText.textContent = currentContent.text;
-        featureImg.src = currentContent.image;
-        featureLink.href = currentContent.link;
-      }
-    });
-  });
-});
 // project slider
 const projectsSwiper = new Swiper(".projects-img-slider", {
   slidesPerView: 1.2,
@@ -445,15 +402,15 @@ const projectsSwiper = new Swiper(".projects-img-slider", {
     nextEl: ".projects-control-next",
     prevEl: ".projects-control-prev",
   },
+  grabCursor: true,
 
   breakpoints: {
     200: {
-      slidesPerView: 1.5,
+      slidesPerView: 1,
       spaceBetween: 10,
     },
     767: {
       slidesPerView: 2,
-      spaceBetween: 10,
     },
     991: {
       spaceBetween: 20,
@@ -462,14 +419,46 @@ const projectsSwiper = new Swiper(".projects-img-slider", {
   },
 });
 
-$(document).ready(function () {
-  $(".navbar-toggler").click(function () {
-    $(".collapse").addClass("show");
-  });
-});
+document.addEventListener("DOMContentLoaded", function () {
+  const imageSlider = new Swiper(".spaces-image-slider", {
+    slidesPerView: 1,
+    spaceBetween: 20,
 
-$(document).ready(function () {
-  $(".close-btn").click(function () {
-    $(".collapse").removeClass("show");
+    pagination: {
+      el: ".innovation-pagination",
+      clickable: true,
+    },
+
+    allowTouchMove: true,
+    grabCursor: true,
+    breakpoints: {
+      200: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      767: {
+        slidesPerView: 1,
+      },
+      991: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+    },
   });
+
+  const contentSlider = new Swiper(".spaces-content-slider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+
+    navigation: {
+      nextEl: ".innovation-next",
+      prevEl: ".innovation-prev",
+    },
+
+    allowTouchMove: true,
+  });
+
+  // Connect both sliders
+  imageSlider.controller.control = contentSlider;
+  contentSlider.controller.control = imageSlider;
 });

@@ -51,31 +51,39 @@
                     </button>
                     <ul class="nav align-items-center ms-auto">
                         <li class="nav-item">
-                            <a href="#">Home</a>
+                            <a href="#" class="nav-link active">Home</a>
                         </li>
+
                         <li class="nav-item">
-                            <a href="#">About</a>
+                            <a href="#" class="nav-link">About</a>
                         </li>
+
                         <li class="nav-item">
-                            <a href="#">Service</a>
-                            <svg width="15" height="8" viewBox="0 0 15 8" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.50003 8C7.32566 8 7.15111 7.93483 7.01799 7.80467L0.199815 1.13804C-0.066605 0.877537 -0.066605 0.455706 0.199815 0.195374C0.466235 -0.064958 0.897655 -0.0651247 1.1639 0.195374L7.50003 6.39068L13.8362 0.195374C14.1026 -0.0651247 14.534 -0.0651247 14.8002 0.195374C15.0665 0.455873 15.0667 0.877703 14.8002 1.13804L7.98208 7.80467C7.84895 7.93483 7.67441 8 7.50003 8Z"
-                                    fill="black" />
-                            </svg>
+                            <a href="#" class="nav-link">
+                                Service
+                                <svg width="15" height="8" viewBox="0 0 15 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.50003 8C7.32566 8 7.15111 7.93483 7.01799 7.80467L0.199815 1.13804C-0.066605 0.877537 -0.066605 0.455706 0.199815 0.195374C0.466235 -0.064958 0.897655 -0.0651247 1.1639 0.195374L7.50003 6.39068L13.8362 0.195374C14.1026 -0.0651247 14.534 -0.0651247 14.8002 0.195374C15.0665 0.455873 15.0667 0.877703 14.8002 1.13804L7.98208 7.80467C7.84895 7.93483 7.67441 8 7.50003 8Z"
+                                        fill="black" />
+                                </svg>
+                            </a>
                         </li>
+
                         <li class="nav-item">
-                            <a href="#">Industries</a>
+                            <a href="#" class="nav-link">Industries</a>
                         </li>
+
                         <li class="nav-item">
-                            <a href="#">Project</a>
+                            <a href="#" class="nav-link">Project</a>
                         </li>
+
                         <li class="nav-item">
-                            <a href="#">Career</a>
+                            <a href="#" class="nav-link">Career</a>
                         </li>
+
                         <li class="nav-item">
-                            <a href="#">Contact Us</a>
+                            <a href="#" class="nav-link">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -306,23 +314,66 @@
                     </div>
                 </div>
                 <div class="row align-items-center">
+                    <!-- Image Slider -->
                     <div class="col-md-5">
-                        <div class="spaces-feature-img-wrapper">
-                            <img src="image/fire-extinguisher.png" id="spaces-feature-img" alt="Fire Image" />
+                        <div class="spaces-feature-img-wrapper swiper spaces-image-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="image/fire-extinguisher.png" alt="Fire & Safety">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="image/fire-extinguisher.png" alt="CCTV & Security Surveillance">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="image/fire-extinguisher.png" alt="pipe system">
+                                </div>
+                            </div>
                         </div>
+                        <div class="innovation-pagination swiper-pagination"></div>
                     </div>
+                    <!-- Content Slider -->
                     <div class="col-md-7">
-                        <div class="spaces-feature-content">
-                            <h3 id="spaces-feature-title">Fire & Safety Solution</h3>
-                            <p id="spaces-feature-text">
-                                Fires can happen anywhere be it your home, office or factory.
-                                Proper water systems, sprinklers, gas systems are safety
-                                measures that are lifesaving. Get all the required fire and
-                                safety solutions from us, ensuring that you're safe and sound
-                                in case of an unfortunate calamity.
-                            </p>
-                            <a href="#" id="spaces-feature-link" class="spaces-readmore-btn">Read More <img
-                                    src="image/cros-arrow.png" alt="cros-arrow" /></a>
+                        <div class="spaces-feature-content swiper spaces-content-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <h3>Fire & Safety Solution</h3>
+                                    <p>
+                                        Fires can happen anywhere be it your home, office or factory. Proper water
+                                        systems, sprinklers, gas systems are safety
+                                        measures that are lifesaving. Get all the required fire and safety solutions
+                                        from us, ensuring that you’re safe and
+                                        sound in case of an unfortunate calamity.  
+                                    </p>
+                                    <a href="#" class="spaces-readmore-btn">
+                                        Read More
+                                        <img src="image/cros-arrow.png" alt="arrow">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>CCTV & Security Surveillance</h3>
+                                    <p>
+                                        Our water management solutions provide reliable and
+                                        efficient systems for homes, offices and industrial
+                                        requirements.
+                                    </p>
+                                    <a href="#" class="spaces-readmore-btn">
+                                        Read More
+                                        <img src="image/cros-arrow.png" alt="arrow">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>pipe system</h3>
+                                    <p>
+                                        Protect your property with modern security solutions
+                                        designed for residential, commercial and industrial spaces.
+                                    </p>
+                                    <a href="#" class="spaces-readmore-btn">
+                                        Read More
+                                        <img src="image/cros-arrow.png" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Bottom navigation -->
                             <div class="innovation-bottom">
                                 <div class="innovation-line"></div>
                                 <div class="innovation-nav">
@@ -1135,6 +1186,9 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <script src="js/custom.js"></script>
 </body>
 
