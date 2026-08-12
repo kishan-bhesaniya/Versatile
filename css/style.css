@@ -122,21 +122,6 @@ a {
     font-family: "inter", sans-serif;
 }
 
-.mtb-120 {
-    margin-block: 120px;
-}
-
-.ptb-80 {
-    padding-block: 80px;
-}
-
-.mt-50 {
-    margin-top: 50px;
-}
-
-.mt-30 {
-    margin-top: 30px;
-}
 
 header {
     position: sticky;
@@ -183,12 +168,10 @@ header .container {
 }
 
 .vsban-box {
-    min-height: 700px;
+    min-height: 850px;
     display: flex;
-    align-items: end;
-    padding-bottom: 120px;
+    align-items: center;
 }
-
 
 .vsbanimg-inner {
     position: absolute;
@@ -225,19 +208,41 @@ header .container {
 }
 
 .vshm-desc p {
-    font-weight: mixed;
+    font-weight: 500;
     font-size: 18px;
     line-height: 25px;
     color: #EAF5FC;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 
-    & i {
+    & b {
         color: #0D73D8;
         font-weight: 600;
     }
 }
 
+.ptb-120 {
+    padding-block: 120px;
+}
+
+.mtb-120 {
+    margin-block: 120px;
+}
+
 .ptmsec-btn {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    background: #0077BD;
+    border-radius: 10px 0px;
+    padding: 15px 20px;
+    display: block;
+    width: fit-content;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.ptmsecc-btn {
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
@@ -249,11 +254,33 @@ header .container {
     transition: all 0.4s ease-in-out;
     text-decoration: none;
     color: #FFFFFF;
+    margin-right: 50px;
+}
+
+.ptmsecc-btn:last-child {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    background: #0077BD;
+    border-radius: 10px 0px;
+    padding: 15px 30px;
+    display: block;
+    width: fit-content;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .ptmsec-btn:hover,
 .ptmsec-btn:active,
 .ptmsec-btn:focus {
+    background: #39b5fc;
+    color: #FFFFFF;
+}
+
+.ptmsecc-btn:hover,
+.ptmsecc-btn:active,
+.ptmsecc-btn:focus {
     background: #39b5fc;
     color: #FFFFFF;
 }
@@ -281,6 +308,10 @@ header .container {
     left: 20px;
 }
 
+.vsinnovation .row.justify-content-between {
+    align-items: center;
+}
+
 .vshm-banner .swiper-button-next {
     right: 20px;
 }
@@ -288,22 +319,26 @@ header .container {
 .vshm-banner .swiper-pagination {
     position: absolute;
     left: 50%;
-    bottom: 28px;
+    bottom: 50px;
     transform: translateX(-50%);
     z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .vshm-banner .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
+    height: 5px;
+    width: 5px;
     background: rgba(255, 255, 255, 0.6);
     opacity: 1;
 }
 
 .vshm-banner .swiper-pagination-bullet-active {
+    height: 10px;
+    width: 10px;
     background: #0077BD;
 }
-
 
 .sw-img {
     position: absolute;
@@ -312,7 +347,6 @@ header .container {
 }
 
 .vsinnovation {
-    padding: 120px 0;
     position: relative;
 }
 
@@ -340,8 +374,7 @@ header .container {
     font-weight: 400;
     color: #000000;
     margin-bottom: 30px;
-    margin-top: 38px;
-    max-width: 50%;
+    max-width: 60%;
 }
 
 .vsinnovation-desc h2 span {
@@ -388,8 +421,8 @@ header .container {
 
 .innovation-prev,
 .innovation-next {
-    width: 52px;
-    height: 52px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: 1px solid #d7e7ff;
     background: #fff;
@@ -418,19 +451,10 @@ header .container {
     text-align: center;
 }
 
-.feature-icon {
-    margin-bottom: 5px;
-}
-
-.feature-icon img {
-    width: 32px;
-}
-
 .feature-box h5 {
-    font-size: 22px;
-    font-weight: 500;
-    color: #222;
-    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #373435;
 }
 
 .feature-divider {
@@ -458,15 +482,15 @@ header .container {
 }
 
 .innovation-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
+    width: 8px;
+    height: 8px;
     background: #cfcfcf;
     opacity: 1;
     transition: .3s;
 }
 
 .innovation-pagination .swiper-pagination-bullet-active {
-    width: 38px;
+    width: 45px;
     border-radius: 20px;
     background: #373435;
 }
@@ -478,7 +502,7 @@ header .container {
 .sw-img {
     position: absolute;
     right: 52%;
-    bottom: 460px;
+    bottom: 65%;
 }
 
 .vsspaces {
@@ -502,7 +526,6 @@ header .container {
 .vsspaces-container {
     position: relative;
     z-index: 5;
-    padding: 80px 0;
 }
 
 .vsspaces-desc {
@@ -513,10 +536,6 @@ header .container {
 .vsspaces-desc .spaces-divider-vertical {
     height: 100px;
     margin-right: 50px;
-}
-
-.vsspaces .row.align-items-center {
-    margin-bottom: 64px;
 }
 
 .vsspaces .col-md-3 {
@@ -596,6 +615,7 @@ header .container {
     background: #0077BD;
     opacity: 0.3;
     margin-bottom: 30px;
+    margin-top: 64px;
 }
 
 .spaces-feature-img-wrapper {
@@ -618,9 +638,7 @@ header .container {
     margin-top: 179px;
 }
 
-.vsinnovation {
-    padding: 120px 0;
-}
+
 
 .blue-glow-circle-bottom {
     position: absolute;
@@ -724,7 +742,6 @@ header .container {
 }
 
 .vsmilestones {
-    padding: 120px 0;
     background-color: #ffffff;
 }
 
@@ -798,7 +815,7 @@ header .container {
 
 .milestones-counter-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 45px rgba(0, 119, 189, 0.08);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
 }
 
 .counter-icon-box {
@@ -840,9 +857,6 @@ header .container {
     pointer-events: none;
 }
 
-.vsclients {
-    padding: 0 0 120px 0;
-}
 
 .vsclients-heading h2 {
     font-size: 46px;
@@ -963,7 +977,7 @@ header .container {
 
 .ft-blue-glow-circle {
     position: absolute;
-    bottom: -100px;
+    bottom: -50px;
     right: 0;
     width: 100%;
     height: 70%;
@@ -975,7 +989,6 @@ header .container {
 }
 
 .vsprojects {
-    padding: 120px 0;
     background-color: #ffffff;
     position: relative;
 }
@@ -1054,22 +1067,21 @@ header .container {
 }
 
 .projects-pagination {
-    position: relative !important;
-    margin-top: 40px;
-    text-align: center;
+    position: sticky;
+    margin-top: 30px;
+    margin-bottom: 54px;
 }
 
 .projects-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
+    width: 8px;
+    height: 8px;
     background: #D9D9D9;
     opacity: 1;
     transition: all 0.3s ease;
-    margin: 0 6px !important;
 }
 
 .projects-pagination .swiper-pagination-bullet-active {
-    width: 58px;
+    width: 45px;
     border-radius: 20px;
     background: #0077BD;
 }
@@ -1110,14 +1122,14 @@ header .container {
 .contact-card {
     background-color: #ffffff;
     border-radius: 24px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 25px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     max-width: 1100px;
     margin: 0 auto;
 }
 
 .card-wraper {
-    padding: 40px 10px;
+    padding: 15px;
 }
 
 .contact-info-panel {
@@ -1127,15 +1139,13 @@ header .container {
     background-color: #0076c0;
     color: #ffffff;
     border-radius: 30px;
-    padding: 10px 30px;
-    min-height: 500px;
+    padding: 41px 24px 186px 30px;
 }
 
 .contact-title {
     font-weight: 700;
     font-size: 40px;
     margin-bottom: 20px;
-    margin-top: 41px;
 }
 
 .contact-subtitle {
@@ -1152,6 +1162,22 @@ header .container {
     color: #FFFFFF;
 }
 
+.contact-text a {
+    text-decoration: none;
+    list-style: none;
+    color: #FFFFFF;
+}
+
+.contact-textt a {
+    text-decoration: none;
+    list-style: none;
+    color: #444;
+}
+
+.contact-textt a:hover {
+    color: #0077BD;
+}
+
 .contact-detail-item+.contact-detail-item {
     margin-top: 30px;
 }
@@ -1163,8 +1189,9 @@ header .container {
     padding-top: 2px;
 }
 
-.contact-form-panel {
-    padding: 74px 48px;
+.contact-section .col-lg-8.col-md-6 {
+    align-items: center;
+    display: flex;
 
 }
 
@@ -1342,6 +1369,18 @@ textarea.form-control {
     padding: 15px 11px;
 }
 
+.contact-row:nth-child(2),
+.contact-row:last-child {
+    align-items: center;
+}
+
+.contact-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 15px 11px;
+}
+
 .contact-icon {
     width: 25px;
     flex: 0 0 25px;
@@ -1401,10 +1440,6 @@ textarea.form-control {
         line-height: 24px;
     }
 
-    .vsinnovation {
-        padding: 100px 0;
-    }
-
     .vsinnovation-desc h2 {
         font-size: 42px;
         line-height: 46px;
@@ -1425,10 +1460,6 @@ textarea.form-control {
     .innovation-next {
         width: 48px;
         height: 48px;
-    }
-
-    .vsspaces-container {
-        padding: 70px 0;
     }
 
     .vsspaces-desc h2 {
@@ -1452,10 +1483,6 @@ textarea.form-control {
 
     .vsspaces .innovation-bottom {
         margin-top: 120px;
-    }
-
-    .vsmilestones {
-        padding: 100px 0;
     }
 
     .milestones-main-card {
@@ -1488,9 +1515,6 @@ textarea.form-control {
         line-height: 27px;
     }
 
-    .vsprojects {
-        padding: 100px 0;
-    }
 
     .vsprojects-heading h2 {
         font-size: 40px;
@@ -1508,12 +1532,29 @@ textarea.form-control {
     .footer-inner {
         padding: 50px 50px 20px;
     }
+
+    .vsinnovation,
+    .vsspaces-container,
+    .vsmilestones,
+    .vsclients,
+    .vsprojects {
+        padding: 0 !important;
+    }
+
 }
 
 @media (max-width: 1199px) {
     header .container {
         width: 95%;
         padding: 8px 20px;
+    }
+
+    .vsinnovation,
+    .vsspaces-container,
+    .vsmilestones,
+    .vsclients,
+    .vsprojects {
+        padding: 35px 0 !important;
     }
 
     .sw-img {
@@ -1715,6 +1756,14 @@ textarea.form-control {
 
 @media (max-width: 991px) {
 
+    .vsinnovation,
+    .vsspaces-container,
+    .vsmilestones,
+    .vsclients,
+    .vsprojects {
+        padding: 20px 0 !important;
+    }
+
     header .container {
         width: 94%;
         padding: 8px 18px;
@@ -1732,6 +1781,9 @@ textarea.form-control {
 
     .header .nav-item+.nav-item {
         margin-left: 0;
+        display: flex;
+        align-items: center;
+        gap: 5px;
     }
 
     .header .nav-item a {
@@ -1951,10 +2003,6 @@ textarea.form-control {
         max-width: 95%;
     }
 
-    .card-wraper {
-        padding: 0;
-    }
-
     .contactt-card {
         padding: 0;
     }
@@ -2070,25 +2118,22 @@ textarea.form-control {
 
 @media (max-width: 767px) {
 
+    .vsinnovation,
+    .vsspaces,
+    .vsspaces-container,
+    .vsmilestones,
+    .vsclients,
+    .vsprojects {
+        padding: 20px 0 !important;
+    }
+
+    .vsspaces-container {
+        padding: 20px 15px !important;
+    }
+
     body {
-        font-size: 16px;
-        line-height: 25px;
-    }
-
-    .mtb-120 {
-        margin-block: 60px;
-    }
-
-    .ptb-80 {
-        padding-block: 50px;
-    }
-
-    .mt-50 {
-        margin-top: 30px;
-    }
-
-    .mt-30 {
-        margin-top: 20px;
+        font-size: 15px;
+        line-height: 24px;
     }
 
     .navbar-expand-lg .navbar-collapse.show {
@@ -2122,12 +2167,13 @@ textarea.form-control {
     .vshm-desc p {
         font-size: 15px;
         line-height: 22px;
+        margin-bottom: 10px;
     }
 
     .ptmsec-btn {
-        font-size: 15px;
-        line-height: 22px;
-        padding: 11px 16px;
+        font-size: 14px;
+        line-height: 19px;
+        padding: 10px 12px;
     }
 
     .vshm-banner .swiper-button-prev,
@@ -2219,10 +2265,6 @@ textarea.form-control {
         border-radius: 18px;
     }
 
-    .vsspaces-container {
-        padding: 20px 15px;
-    }
-
     .vsspaces-desc h2 {
         font-size: 30px;
         line-height: 40px;
@@ -2303,7 +2345,6 @@ textarea.form-control {
     }
 
     .milestones-main-card {
-        min-height: 330px;
         padding: 30px 20px;
         border-radius: 20px;
         margin-bottom: 20px;
@@ -2326,12 +2367,6 @@ textarea.form-control {
 
     .milestones-decor-arrow img {
         width: 40px;
-    }
-
-    .milestones-counter-card {
-        min-height: 200px;
-        padding: 25px 15px;
-        border-radius: 20px;
     }
 
     .counter-icon-box {
@@ -2361,6 +2396,7 @@ textarea.form-control {
     .vsclients-heading h2 {
         font-size: 30px;
         line-height: 1.2;
+        margin-bottom: 10px;
     }
 
     .vsclients-divider-line {
@@ -2444,10 +2480,6 @@ textarea.form-control {
     .contact-card {
         max-width: calc(100% - 20px);
         border-radius: 18px;
-    }
-
-    .card-wraper {
-        padding: 15px;
     }
 
     .contact-info-panel {
@@ -2536,6 +2568,10 @@ textarea.form-control {
         line-height: 27px;
     }
 
+    .service-list a:hover {
+        color: #0076c0;
+    }
+
     .service-list a+a {
         margin-top: 10px;
     }
@@ -2586,7 +2622,7 @@ textarea.form-control {
     }
 
     .contact-row+.contact-row {
-        margin-top: 10px;
+        margin-top: 0;
     }
 
     .contact-icon {
