@@ -410,11 +410,11 @@ const projectsSwiper = new Swiper(".projects-img-slider", {
       spaceBetween: 10,
     },
     767: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     991: {
       spaceBetween: 20,
-      slidesPerView: 1.2,
+      slidesPerView: 1.4,
     },
   },
 });
@@ -438,7 +438,7 @@ var spacesSlider = new Swiper(".spaces-feature-slider", {
       spaceBetween: 10,
     },
     767: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     991: {
       spaceBetween: 20,

@@ -1065,7 +1065,6 @@ header .container {
 }
 
 .projects-img-slider {
-    overflow: visible !important;
     width: 100%;
 }
 
@@ -1371,12 +1370,12 @@ textarea.form-control {
 }
 
 .social-icons a:hover svg rect {
-    fill: #373435;
+    fill: #F2F2F2;
     transition: 0.4s ease-in-out;
 }
 
 .social-icons a:hover svg path {
-    fill: #FFFFFF;
+    fill: #0077BD;
     transition: 0.3s ease-in-out;
 }
 
@@ -1468,7 +1467,6 @@ textarea.form-control {
 
     .vsban-box {
         min-height: 650px;
-        padding-bottom: 100px;
     }
 
     .vshm-desc h1 {
@@ -1543,10 +1541,6 @@ textarea.form-control {
         font-size: 18px;
     }
 
-    .vsclients {
-        padding-bottom: 100px;
-    }
-
     .vsclients-heading h2 {
         font-size: 40px;
     }
@@ -1595,17 +1589,12 @@ textarea.form-control {
         margin-bottom: 54px;
     }
 
-    .card-wraper {
-        padding: 26px 9px;
-    }
-
     .header .nav-item a {
         font-size: 15px;
     }
 
     .vsban-box {
         min-height: 600px;
-        padding-bottom: 90px;
     }
 
     .vshm-desc h1 {
@@ -1716,10 +1705,6 @@ textarea.form-control {
         font-size: 17px;
     }
 
-    .vsclients {
-        padding-bottom: 90px;
-    }
-
     .vsclients-heading h2 {
         font-size: 36px;
     }
@@ -1727,11 +1712,6 @@ textarea.form-control {
     .vsclients-desc-text {
         font-size: 17px;
         line-height: 26px;
-    }
-
-
-    .vsprojects {
-        padding: 90px 0;
     }
 
     .vsprojects-heading h2 {
@@ -1823,6 +1803,19 @@ textarea.form-control {
         margin-bottom: 20px;
     }
 
+    .spaces-nav-box h5 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .list-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .ptmsecc-btn {
+        padding: 13px 40px;
+    }
+
     .vshm-banner .swiper-button-prev,
     .vshm-banner .swiper-button-next {
         width: 38px;
@@ -1905,7 +1898,10 @@ textarea.form-control {
     .vsspaces-desc h2 {
         font-size: 34px;
         line-height: 44px;
-        margin-bottom: 20px;
+    }
+
+    .vsspaces {
+        padding: 0;
     }
 
     .vsspaces-lead-text {
@@ -1969,9 +1965,7 @@ textarea.form-control {
         font-size: 30px;
     }
 
-    .vsclients {
-        padding-bottom: 50px;
-    }
+
 
     .vsclients-heading h2 {
         font-size: 36px;
@@ -2141,13 +2135,22 @@ textarea.form-control {
         border-radius: 22px;
     }
 
+    .ptmsecc-btn {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .ptmsecc-btn {
+        padding: 13px 23px;
+        margin-right: 8px;
+    }
+
     .header .nav-item a {
         font-size: 16px;
     }
 
     .vsban-box {
         min-height: 500px;
-        padding-bottom: 65px;
     }
 
     .vshm-desc h1 {
@@ -2476,8 +2479,7 @@ textarea.form-control {
     .contact-info-panel {
         padding: 20px 20px 30px;
         border-radius: 18px;
-        min-height: auto;
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
 
     .contact-title {
@@ -2503,7 +2505,7 @@ textarea.form-control {
     }
 
     .contact-form-panel {
-        padding: 25px 10px 15px;
+        padding: 15px;
     }
 
     .contact-input-field {
@@ -2524,13 +2526,7 @@ textarea.form-control {
     }
 
     .footer {
-        min-height: auto;
         border-radius: 20px;
-    }
-
-    .g-3,
-    .gy-3 {
-        --bs-gutter-y: 0;
     }
 
     .footer-inner {
@@ -2566,6 +2562,14 @@ textarea.form-control {
         margin-top: 30px;
     }
 
+    .list-wrapper {
+        margin-bottom: 0;
+        gap: 0;
+        text-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
+    }
+
     .quick-links {
         gap: 10px 16px;
         display: flex;
@@ -2575,13 +2579,12 @@ textarea.form-control {
     }
 
     .quick-links a {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .contactt-card {
-        min-height: auto;
         padding: 8px;
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .contact-row {
