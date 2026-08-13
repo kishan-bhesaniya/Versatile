@@ -2240,6 +2240,10 @@ textarea.form-control {
         font-size: 16px;
     }
 
+    #contactForm {
+        padding: 0;
+    }
+
     .vsban-box {
         min-height: 500px;
     }

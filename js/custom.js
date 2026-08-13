@@ -402,7 +402,6 @@ const projectsSwiper = new Swiper(".projects-img-slider", {
     nextEl: ".projects-control-next",
     prevEl: ".projects-control-prev",
   },
-  grabCursor: true,
 
   breakpoints: {
     200: {
