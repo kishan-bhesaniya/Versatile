@@ -373,7 +373,7 @@ new Swiper(".innovation-img-slider", {
 
   breakpoints: {
     200: {
-      slidesPerView: 1.5,
+      slidesPerView: 1,
       spaceBetween: 10,
     },
     767: {
