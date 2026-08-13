@@ -419,30 +419,54 @@ const projectsSwiper = new Swiper(".projects-img-slider", {
   },
 });
 
-var spacesSlider = new Swiper(".spaces-feature-slider", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  pagination: {
-    el: ".innovation-pagination",
-    clickable: true,
-  },
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".spaces-feature-slider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: false,
 
-  navigation: {
-    nextEl: ".innovation-next",
-    prevEl: ".innovation-prev",
-  },
-  breakpoints: {
-    200: {
-      slidesPerView: 1,
-      spaceBetween: 10,
+    navigation: {
+      nextEl: ".innovation-next",
+      prevEl: ".innovation-prev",
     },
-    767: {
-      slidesPerView: 1,
+    breakpoints: {
+      200: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      767: {
+        slidesPerView: 1,
+      },
+      991: {
+        spaceBetween: 20,
+        slidesPerView: 1,
+      },
     },
-    991: {
-      spaceBetween: 20,
-      slidesPerView: 1,
+    on: {
+      slideChange: function () {
+        updateActiveTab(this.activeIndex);
+      },
     },
-  },
+  });
+
+  const tabs = document.querySelectorAll(".spaces-nav-box");
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", function () {
+      updateActiveTab(index);
+      swiper.slideTo(index);
+    });
+  });
+
+  function updateActiveTab(index) {
+    tabs.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+
+    if (tabs[index]) {
+      tabs[index].classList.add("active");
+    }
+  }
+
+  updateActiveTab(0);
 });

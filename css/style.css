@@ -266,9 +266,11 @@ header .container {
     color: #EAF5FC;
     margin-bottom: 30px;
 
-    & b {
+    & b,
+    strong {
         color: #0D73D8;
         font-weight: 600;
+        font-style: italic;
     }
 }
 
@@ -1181,7 +1183,7 @@ header .container {
 }
 
 .card-wraper {
-    padding: 15px;
+    padding: 15px 0 15px 15px;
 }
 
 .contact-info-panel {
@@ -1448,6 +1450,10 @@ textarea.form-control {
     color: #000000;
     font-size: 14px;
     line-height: 20px;
+}
+
+#contactForm {
+    padding: 74px 70px;
 }
 
 @media (max-width: 1399px) {
