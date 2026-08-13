@@ -357,6 +357,7 @@ $(document).ready(function () {
   });
 });
 
+//innovation slider
 new Swiper(".innovation-img-slider", {
   loop: true,
   slidesPerView: 1,
@@ -387,37 +388,7 @@ new Swiper(".innovation-img-slider", {
   },
 });
 
-// project slider
-const projectsSwiper = new Swiper(".projects-img-slider", {
-  slidesPerView: 1.2,
-  centeredSlides: true,
-  spaceBetween: 30,
-  loop: false,
-  pagination: {
-    el: ".projects-pagination",
-    clickable: true,
-  },
-
-  navigation: {
-    nextEl: ".projects-control-next",
-    prevEl: ".projects-control-prev",
-  },
-
-  breakpoints: {
-    200: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    767: {
-      slidesPerView: 1,
-    },
-    991: {
-      spaceBetween: 20,
-      slidesPerView: 1.4,
-    },
-  },
-});
-
+//spaces slider
 document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".spaces-feature-slider", {
     slidesPerView: 1,
@@ -468,4 +439,21 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   updateActiveTab(0);
+});
+
+//project slider
+document.addEventListener("DOMContentLoaded", function () {
+  const projectSlider = new Swiper(".projects-img-slider", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 20,
+    pagination: {
+      el: ".projects-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".projects-control-next",
+      prevEl: ".projects-control-prev",
+    },
+  });
 });
