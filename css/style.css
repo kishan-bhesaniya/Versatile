@@ -660,11 +660,6 @@ header .container {
     margin-top: 64px;
 }
 
-.spaces-feature-img-wrapper {
-    border-radius: 35px;
-    overflow: hidden;
-}
-
 .spaces-feature-img-wrapper img {
     width: 100%;
     display: block;
@@ -1047,6 +1042,7 @@ header .container {
 .vsprojects {
     background-color: #ffffff;
     position: relative;
+    overflow: hidden;
 }
 
 .vsprojects .innovation-line {
@@ -1066,12 +1062,6 @@ header .container {
     margin-bottom: 80px;
 }
 
-.projects-slide-box {
-    position: relative;
-    border-radius: 35px;
-    overflow: hidden;
-}
-
 .projects-slide-box::after {
     content: "";
     position: absolute;
@@ -1084,14 +1074,6 @@ header .container {
     filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.25));
     pointer-events: none;
 }
-
-.projects-slide-box img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
 
 .projects-caption {
     position: absolute;
@@ -1108,11 +1090,9 @@ header .container {
     line-height: 24px;
 }
 
-
 .projects-pagination {
     position: sticky;
-    margin-top: 30px;
-    margin-bottom: 54px;
+    margin-bottom: 40px;
 }
 
 .projects-pagination .swiper-pagination-bullet {
@@ -1446,8 +1426,7 @@ textarea.form-control {
 
 .projects-img-slider {
     width: 100%;
-    height: 450px;
-    padding: 30px 0;
+    height: 500px;
 }
 
 .vsprojects .swiper-slide {
@@ -1467,13 +1446,14 @@ textarea.form-control {
 .projects-slide-box {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 90%;
+    border-radius: 35px;
+    overflow: hidden;
 }
 
 .projects-slide-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     display: block;
 }
 
@@ -1567,10 +1547,6 @@ textarea.form-control {
         line-height: 27px;
     }
 
-    .vsspaces .innovation-bottom {
-        margin-top: 120px;
-    }
-
     .milestones-main-card {
         padding: 40px 30px;
     }
@@ -1634,10 +1610,6 @@ textarea.form-control {
 
     .header .nav-item+.nav-item {
         margin-left: 20px;
-    }
-
-    .vsspaces .row.align-items-center {
-        margin-bottom: 54px;
     }
 
     .header .nav-item a {
@@ -1715,10 +1687,6 @@ textarea.form-control {
     .spaces-feature-content p {
         font-size: 16px;
         line-height: 25px;
-    }
-
-    .vsspaces .innovation-bottom {
-        margin-top: 80px;
     }
 
     .spaces-nav-controls {
@@ -1820,6 +1788,10 @@ textarea.form-control {
         padding: 20px;
     }
 
+    #contactForm {
+        padding: 0;
+    }
+
     .projects-pagination {
         margin-top: 20px;
         margin-bottom: 30px;
@@ -1896,17 +1868,6 @@ textarea.form-control {
     .vshm-banner .swiper-button-next {
         width: 38px;
         height: 38px;
-    }
-
-    .vsinnovation,
-    .vsprojects,
-    .vsspaces-container {
-        padding: 50px 0;
-    }
-
-    .vsmilestones {
-        padding: 0;
-        padding-bottom: 50px;
     }
 
     .vsinnovation-desc {
@@ -1986,7 +1947,7 @@ textarea.form-control {
     }
 
     .vsspaces .row.align-items-center {
-        margin-bottom: 45px;
+        margin-bottom: 0;
     }
 
     .vsspaces .col-md-3 {
@@ -2004,8 +1965,9 @@ textarea.form-control {
     }
 
     .spaces-feature-content p {
-        font-size: 17px;
-        line-height: 27px;
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 10px;
     }
 
     .vsspaces .innovation-bottom {
@@ -2017,7 +1979,6 @@ textarea.form-control {
         justify-content: center;
         margin-top: 25px;
     }
-
 
     .milestones-main-card {
         margin-bottom: 25px;
@@ -2163,7 +2124,7 @@ textarea.form-control {
 
     .header .nav-item a {
         display: block;
-        padding: 7px 0;
+        padding: 7px 7px;
         font-size: 17px;
     }
 
@@ -2389,6 +2350,10 @@ textarea.form-control {
         margin-left: 0;
     }
 
+    .projects-img-slider {
+        height: 250px;
+    }
+
     .innovation-prev,
     .innovation-next {
         width: 44px;
@@ -2408,10 +2373,6 @@ textarea.form-control {
     .vsspaces-lead-text {
         font-size: 16px;
         line-height: 25px;
-    }
-
-    .vsspaces .row.align-items-center {
-        margin-bottom: 35px;
     }
 
     .spaces-nav-box {

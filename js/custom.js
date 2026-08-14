@@ -447,6 +447,7 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: "auto",
     centeredSlides: true,
     spaceBetween: 20,
+    slideToClickedSlide: true,
     pagination: {
       el: ".projects-pagination",
       clickable: true,
@@ -454,6 +455,15 @@ document.addEventListener("DOMContentLoaded", function () {
     navigation: {
       nextEl: ".projects-control-next",
       prevEl: ".projects-control-prev",
+    },
+    breakpoints: {
+      200: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      991: {
+        spaceBetween: 20,
+      },
     },
   });
 });
