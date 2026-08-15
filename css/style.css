@@ -314,14 +314,14 @@ header .container {
 .ptmsec-btn:hover,
 .ptmsec-btn:active,
 .ptmsec-btn:focus {
-    background: #00a2fff9;
+    background: #000000f9;
     color: #FFFFFF;
 }
 
 .ptmsecc-btn:hover,
 .ptmsecc-btn:active,
 .ptmsecc-btn:focus {
-    background: #01a2ff;
+    background: #000000f9;
     color: #FFFFFF;
 }
 
@@ -348,7 +348,7 @@ header .container {
     left: 20px;
 }
 
-.vsinnovation .row.justify-content-between {
+.vshm-innovation .row.justify-content-between {
     align-items: center;
 }
 
@@ -386,7 +386,7 @@ header .container {
     bottom: -280px;
 }
 
-.vsinnovation {
+.vshm-innovation {
     position: relative;
 }
 
@@ -403,12 +403,12 @@ header .container {
     pointer-events: none;
 }
 
-.vsinnovation .container {
+.vshm-innovation .container {
     position: relative;
     z-index: 2;
 }
 
-.vsinnovation-desc h2 {
+.vshm-innovation-desc h2 {
     font-size: 46px;
     line-height: 50px;
     font-weight: 400;
@@ -417,15 +417,15 @@ header .container {
     max-width: 60%;
 }
 
-.vsinnovation-desc h2 span {
+.vshm-innovation-desc h2 span {
     font-weight: 300;
 }
 
-.vsinnovation-desc h2 strong {
+.vshm-innovation-desc h2 strong {
     font-weight: 700;
 }
 
-.vsinnovation-desc p {
+.vshm-innovation-desc p {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -544,7 +544,7 @@ header .container {
     bottom: 65%;
 }
 
-.vsspaces {
+.vshm-spaces {
     position: relative;
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
@@ -565,26 +565,26 @@ header .container {
     pointer-events: none;
 }
 
-.vsspaces-container {
+.vshm-spaces-container {
     position: relative;
     z-index: 5;
 }
 
-.vsspaces-desc {
+.vshm-spaces-desc {
     display: flex;
     justify-content: space-between;
 }
 
-.vsspaces-desc .spaces-divider-vertical {
+.vshm-spaces-desc .spaces-divider-vertical {
     height: 100px;
     margin-right: 50px;
 }
 
-.vsspaces .col-md-3 {
+.vshm-spaces .col-md-3 {
     margin-bottom: 79px;
 }
 
-.vsspaces-desc h2 {
+.vshm-spaces-desc h2 {
     font-size: 46px;
     line-height: 54px;
     font-weight: 400;
@@ -592,12 +592,12 @@ header .container {
     margin: 0;
 }
 
-.vsspaces-desc h2 strong {
+.vshm-spaces-desc h2 strong {
     display: block;
     font-weight: 700;
 }
 
-.vsspaces-lead-text {
+.vshm-spaces-lead-text {
     font-size: 20px;
     line-height: 32px;
     font-weight: 400;
@@ -671,7 +671,7 @@ header .container {
     justify-content: space-between;
 }
 
-.vsspaces .innovation-bottom {
+.vshm-spaces .innovation-bottom {
     margin-top: -26px;
     margin-left: 30px;
 }
@@ -688,7 +688,7 @@ header .container {
     pointer-events: none;
 }
 
-.vsspaces-container {
+.vshm-spaces-container {
     position: relative;
     z-index: 5;
 }
@@ -779,7 +779,7 @@ header .container {
     box-shadow: 0 8px 16px rgba(0, 119, 189, 0.2);
 }
 
-.vsmilestones {
+.vshm-milestones {
     background-color: #ffffff;
 }
 
@@ -896,28 +896,28 @@ header .container {
 }
 
 
-.vsclients-heading h2 {
+.vshm-clients-heading h2 {
     font-size: 46px;
     line-height: 52px;
     font-weight: 700;
     color: #373435;
 }
 
-.vsclients-divider-line {
+.vshm-clients-divider-line {
     width: 2px;
     height: 60px;
     background-color: #0077BD;
     opacity: 0.4;
 }
 
-.vsclients-desc-text {
+.vshm-clients-desc-text {
     font-size: 20px;
     line-height: 28px;
     color: #373435;
     font-weight: 400;
 }
 
-.vsclients-marquee-wrapper {
+.vshm-clients-marquee-wrapper {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -944,7 +944,7 @@ header .container {
 }
 
 
-.vsclients-logo-box {
+.vshm-clients-logo-box {
     background: #ffffff;
     border-radius: 10px;
     display: flex;
@@ -1039,13 +1039,13 @@ header .container {
     pointer-events: none;
 }
 
-.vsprojects {
+.vshm-projects {
     background-color: #ffffff;
     position: relative;
     overflow: hidden;
 }
 
-.vsprojects .innovation-line {
+.vshm-projects .innovation-line {
     flex: 1;
     height: 1px;
     position: relative;
@@ -1054,7 +1054,7 @@ header .container {
     right: -73px;
 }
 
-.vsprojects-heading h2 {
+.vshm-projects-heading h2 {
     font-size: 46px;
     line-height: 54px;
     font-weight: 400;
@@ -1211,7 +1211,7 @@ header .container {
     padding-top: 2px;
 }
 
-.contact-section .col-lg-8.col-md-6 {
+.vshm-contact .col-lg-8.col-md-6 {
     align-items: center;
     display: flex;
 
@@ -1310,10 +1310,10 @@ textarea.form-control {
     content: "";
     position: absolute;
     width: 1px;
-    height: 209px;
+    height: 200px;
     background: #0085cf;
     left: 36%;
-    top: 13%;
+    top: 16%;
 }
 
 .second-list {
@@ -1429,7 +1429,7 @@ textarea.form-control {
     height: 500px;
 }
 
-.vsprojects .swiper-slide {
+.vshm-projects .swiper-slide {
     width: 12%;
     height: 100%;
     border-radius: 24px;
@@ -1438,7 +1438,7 @@ textarea.form-control {
     transition: width 0.6s ease, opacity 0.6s ease;
 }
 
-.vsprojects .swiper-slide.swiper-slide-active {
+.vshm-projects .swiper-slide.swiper-slide-active {
     width: 60%;
     opacity: 1;
 }
@@ -1473,7 +1473,7 @@ textarea.form-control {
     margin: 0;
 }
 
-.vsprojects .swiper-slide-active .projects-caption {
+.vshm-projects .swiper-slide-active .projects-caption {
     opacity: 1;
 }
 
@@ -1506,14 +1506,13 @@ textarea.form-control {
         line-height: 24px;
     }
 
-    .vsinnovation-desc h2 {
+    .vshm-innovation-desc h2 {
         font-size: 42px;
         line-height: 46px;
         margin-top: 25px;
-        max-width: 50%;
     }
 
-    .vsinnovation-desc p {
+    .vshm-innovation-desc p {
         font-size: 17px;
         line-height: 26px;
     }
@@ -1528,12 +1527,12 @@ textarea.form-control {
         height: 48px;
     }
 
-    .vsspaces-desc h2 {
+    .vshm-spaces-desc h2 {
         font-size: 42px;
         line-height: 50px;
     }
 
-    .vsspaces-lead-text {
+    .vshm-spaces-lead-text {
         font-size: 18px;
         line-height: 29px;
     }
@@ -1564,17 +1563,17 @@ textarea.form-control {
         font-size: 18px;
     }
 
-    .vsclients-heading h2 {
+    .vshm-clients-heading h2 {
         font-size: 40px;
     }
 
-    .vsclients-desc-text {
+    .vshm-clients-desc-text {
         font-size: 18px;
         line-height: 27px;
     }
 
 
-    .vsprojects-heading h2 {
+    .vshm-projects-heading h2 {
         font-size: 40px;
         margin-bottom: 65px;
     }
@@ -1633,18 +1632,18 @@ textarea.form-control {
         padding: 13px 18px;
     }
 
-    .vsinnovation {
+    .vshm-innovation {
         padding: 90px 0;
     }
 
-    .vsinnovation-desc h2 {
+    .vshm-innovation-desc h2 {
         font-size: 38px;
         line-height: 42px;
         margin-top: 0;
         max-width: 70%;
     }
 
-    .vsinnovation-desc p {
+    .vshm-innovation-desc p {
         font-size: 16px;
         line-height: 25px;
     }
@@ -1662,21 +1661,21 @@ textarea.form-control {
         margin-left: 0;
     }
 
-    .vsspaces-container {
+    .vshm-spaces-container {
         padding: 70px 0;
     }
 
-    .vsspaces-desc h2 {
+    .vshm-spaces-desc h2 {
         font-size: 38px;
         list-style: 48px;
     }
 
-    .vsspaces-lead-text {
+    .vshm-spaces-lead-text {
         font-size: 17px;
         line-height: 27px;
     }
 
-    .vsspaces-desc .spaces-divider-vertical {
+    .vshm-spaces-desc .spaces-divider-vertical {
         margin-right: 30px;
     }
 
@@ -1693,7 +1692,7 @@ textarea.form-control {
         bottom: -30px;
     }
 
-    .vsmilestones {
+    .vshm-milestones {
         padding: 90px 0;
     }
 
@@ -1724,16 +1723,16 @@ textarea.form-control {
         font-size: 17px;
     }
 
-    .vsclients-heading h2 {
+    .vshm-clients-heading h2 {
         font-size: 36px;
     }
 
-    .vsclients-desc-text {
+    .vshm-clients-desc-text {
         font-size: 17px;
         line-height: 26px;
     }
 
-    .vsprojects-heading h2 {
+    .vshm-projects-heading h2 {
         font-size: 36px;
         margin-bottom: 60px;
     }
@@ -1870,11 +1869,11 @@ textarea.form-control {
         height: 38px;
     }
 
-    .vsinnovation-desc {
+    .vshm-innovation-desc {
         margin-bottom: 45px;
     }
 
-    .vsinnovation-desc h2 {
+    .vshm-innovation-desc h2 {
         font-size: 34px;
         left: 38px;
         margin-top: 0;
@@ -1924,33 +1923,33 @@ textarea.form-control {
         display: none;
     }
 
-    .vsspaces-desc {
+    .vshm-spaces-desc {
         display: block;
     }
 
-    .vsspaces-desc .spaces-divider-vertical {
+    .vshm-spaces-desc .spaces-divider-vertical {
         display: none;
     }
 
-    .vsspaces-desc h2 {
+    .vshm-spaces-desc h2 {
         font-size: 34px;
         line-height: 44px;
     }
 
-    .vsspaces {
+    .vshm-spaces {
         padding: 0;
     }
 
-    .vsspaces-lead-text {
+    .vshm-spaces-lead-text {
         font-size: 17px;
         line-height: 27px;
     }
 
-    .vsspaces .row.align-items-center {
+    .vshm-spaces .row.align-items-center {
         margin-bottom: 0;
     }
 
-    .vsspaces .col-md-3 {
+    .vshm-spaces .col-md-3 {
         margin-bottom: 25px;
     }
 
@@ -1970,7 +1969,7 @@ textarea.form-control {
         margin-bottom: 10px;
     }
 
-    .vsspaces .innovation-bottom {
+    .vshm-spaces .innovation-bottom {
         margin-top: 0;
     }
 
@@ -2004,15 +2003,15 @@ textarea.form-control {
 
 
 
-    .vsclients-heading h2 {
+    .vshm-clients-heading h2 {
         font-size: 36px;
     }
 
-    .vsclients-desc-text {
+    .vshm-clients-desc-text {
         font-size: 17px;
     }
 
-    .vsclients-marquee-wrapper {
+    .vshm-clients-marquee-wrapper {
         margin-top: 25px;
     }
 
@@ -2022,7 +2021,7 @@ textarea.form-control {
     }
 
 
-    .vsprojects-heading h2 {
+    .vshm-projects-heading h2 {
         font-size: 36px;
         margin-bottom: 50px;
     }
@@ -2196,7 +2195,7 @@ textarea.form-control {
         padding-block: 50px;
     }
 
-    .vsspaces-container {
+    .vshm-spaces-container {
         padding: 20px 15px !important;
     }
 
@@ -2289,22 +2288,22 @@ textarea.form-control {
         bottom: 18px;
     }
 
-    .vsinnovation,
-    .vsprojects {
+    .vshm-innovation,
+    .vshm-projects {
         padding: 30px 0;
     }
 
-    .vsinnovation-desc {
+    .vshm-innovation-desc {
         margin-bottom: 35px;
     }
 
-    .vsinnovation-desc h2 {
+    .vshm-innovation-desc h2 {
         font-size: 30px;
         line-height: 34px;
         margin-bottom: 18px;
     }
 
-    .vsinnovation-desc p {
+    .vshm-innovation-desc p {
         font-size: 16px;
         line-height: 25px;
     }
@@ -2364,13 +2363,13 @@ textarea.form-control {
         border-radius: 18px;
     }
 
-    .vsspaces-desc h2 {
+    .vshm-spaces-desc h2 {
         font-size: 30px;
         line-height: 40px;
         margin-bottom: 18px;
     }
 
-    .vsspaces-lead-text {
+    .vshm-spaces-lead-text {
         font-size: 16px;
         line-height: 25px;
     }
@@ -2419,7 +2418,7 @@ textarea.form-control {
         gap: 12px;
     }
 
-    .vsspaces .innovation-bottom {
+    .vshm-spaces .innovation-bottom {
         margin-top: 35px;
     }
 
@@ -2480,27 +2479,27 @@ textarea.form-control {
         line-height: 21px;
     }
 
-    .vsclients {
+    .vshm-clients {
         padding-bottom: 60px;
     }
 
-    .vsclients-heading h2 {
+    .vshm-clients-heading h2 {
         font-size: 30px;
         line-height: 1.2;
         margin-bottom: 10px;
     }
 
-    .vsclients-divider-line {
+    .vshm-clients-divider-line {
         height: 40px;
         width: 1px;
     }
 
-    .vsclients-desc-text {
+    .vshm-clients-desc-text {
         font-size: 16px;
         line-height: 25px;
     }
 
-    .vsclients-marquee-wrapper {
+    .vshm-clients-marquee-wrapper {
         margin-top: 20px;
     }
 
@@ -2514,12 +2513,12 @@ textarea.form-control {
         gap: 15px;
     }
 
-    .vsclients-logo-box {
+    .vshm-clients-logo-box {
         flex: 0 0 130px;
         min-height: 70px;
     }
 
-    .vsprojects-heading h2 {
+    .vshm-projects-heading h2 {
         font-size: 30px;
         line-height: 1.2;
         margin-bottom: 35px;
