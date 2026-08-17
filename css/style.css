@@ -314,14 +314,14 @@ header .container {
 .ptmsec-btn:hover,
 .ptmsec-btn:active,
 .ptmsec-btn:focus {
-    background: #000000f9;
+    background: #272424f9;
     color: #FFFFFF;
 }
 
 .ptmsecc-btn:hover,
 .ptmsecc-btn:active,
 .ptmsecc-btn:focus {
-    background: #000000f9;
+    background: #272424f9;
     color: #FFFFFF;
 }
 
@@ -1301,12 +1301,7 @@ textarea.form-control {
     gap: 26px;
 }
 
-.service-list {
-    list-style: none;
-    margin-right: 26px;
-}
-
-.elv-area::after {
+/* .elv-area::after {
     content: "";
     position: absolute;
     width: 1px;
@@ -1314,7 +1309,7 @@ textarea.form-control {
     background: #0085cf;
     left: 36%;
     top: 16%;
-}
+} */
 
 .second-list {
     padding-left: 26px;
@@ -1585,6 +1580,10 @@ textarea.form-control {
     .footer-inner {
         padding: 50px 50px 20px;
     }
+
+    .elv-area::after {
+        display: none;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -1592,6 +1591,7 @@ textarea.form-control {
         width: 95%;
         padding: 8px 20px;
     }
+
 
     .ptb-120 {
         padding-block: 90px;
